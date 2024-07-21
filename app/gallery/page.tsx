@@ -1,6 +1,6 @@
 import Banner from "@/components/Banner";
 import Navbar from "@/components/Navbar";
-import { EfficientGISSolutions, DedicatedTowards, OurCoreServices } from "@/components/HomeComponents";
+import { EfficientGISSolutions } from "@/components/HomeComponents";
 
 const page = () => {
   return (
