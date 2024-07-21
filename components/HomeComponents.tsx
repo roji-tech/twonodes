@@ -225,52 +225,6 @@ import Link from "next/link";
 //             </p>
 //           </div>
 //         </div>
-
-//         <div className="flex w-full justify-center overflow-hidden">
-//           <Carousel className="w-full" style={{ width: "95%" }}>
-//             <CarouselContent className="flex gap-7">
-//               {Courses.map((course, ind) => (
-//                 <CarouselItem
-//                   key={ind}
-//                   className="p-2 basis-full lg:basis-[40%]"
-//                 >
-//                   <div
-//                     className="m-auto max-w-[509.62px] w-full h-max flex flex-col gap-9"
-//                     style={{ background: course.bgColor }}
-//                   >
-//                     <img
-//                       className="w-full max-[500px]:h-[300px] h-[459px]"
-//                       src={course.image}
-//                     />
-
-//                     <div className="px-[27px] pb-10 flex-col justify-start items-start gap-6 flex">
-//                       <div className="h-[121.50px] justify-start items-start flex">
-//                         <div className="h-[121.50px] flex flex-col justify-start items-start gap-3">
-//                           <div className="flex justify-between items-start w-full">
-//                             <h2 className="text-black text-4xl font-semibold font-['Archivo']">
-//                               {course.title}
-//                             </h2>
-//                             {Arrow45Up}
-//                           </div>
-//                           <div className="w-full text-black text-lg font-normal font-['Inter'] leading-[27px]">
-//                             {course.desc}
-//                           </div>
-//                         </div>
-//                       </div>
-//                       <div className="w-[166px] h-[53px] p-[11.25px] bg-white rounded-lg justify-center items-center gap-[11.25px] inline-flex">
-//                         <div className="text-black text-lg font-semibold font-['Inter']">
-//                           Learn More
-//                         </div>
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </CarouselItem>
-//               ))}
-//             </CarouselContent>
-//             <CarouselPrevious />
-//             <CarouselNext />
-//           </Carousel>
-//         </div>
 //       </div>
 //     </div>
 //   );
@@ -332,7 +286,7 @@ export const SurveyTrustFirms = () => {
   return (
     <div className="overflow-hidden max-w-full">
       <div className="w-full h-[276px] py-10 items-center  bg-white self-stretch flex-col justify-start gap-[35px] flex">
-        <div className="text-center text-stone-950 text-lg font-semibold font-['Bricolage Grotesque']">
+        <div className="text-center text-stone-950 text-lg font-semibold">
           Survey Firms that Trust our Solution
         </div>
         <div className="flex w-full justify-center overflow-hidden items-center">
@@ -350,10 +304,10 @@ export const SurveyTrustFirms = () => {
                       alt={survey.companyName}
                     />
                     <div className="flex-col justify-start items-center flex">
-                      <div className="text-center text-stone-950 text-sm font-medium font-['Bricolage Grotesque']">
+                      <div className="text-center text-stone-950 text-sm font-medium">
                         {survey.companyName}
                       </div>
-                      <div className="text-center text-stone-950 text-xs font-normal font-['Bricolage Grotesque'] leading-7">
+                      <div className="text-center text-stone-950 text-xs font-normal leading-7">
                         {survey.surveyor}
                       </div>
                     </div>
@@ -378,12 +332,12 @@ export const EfficientGISSolutions = () => {
           <div className="h-[172px] flex flex-col justify-start items-start gap-[30px]">
             <div className="flex justify-start items-center gap-[15px]">
               <div className="w-5 h-[0px] border-2 border-sky-950"></div>
-              <div className="text-sky-950 text-xl font-medium font-['Bricolage Grotesque'] leading-[34px]">
+              <div className="text-sky-950 text-xl font-medium leading-[34px]">
                 Our Core Solution
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-[18px]">
-              <div className="w-[331px] text-sky-950 text-[50px] font-extrabold font-['Bricolage Grotesque'] leading-[54px]">
+              <div className="w-[331px] text-sky-950 text-[50px] font-extrabold leading-[54px]">
                 Efficient GIS Solutions
               </div>
             </div>
@@ -392,15 +346,15 @@ export const EfficientGISSolutions = () => {
             <div className="w-[570px] flex justify-start items-start gap-6">
               <div className="w-16 h-16 relative">
                 <div className="w-16 h-16 left-0 top-0 absolute rounded-full border-2 border-sky-950" />
-                <div className="left-[28px] top-[15px] absolute text-center text-sky-950 text-2xl font-bold font-['Bricolage Grotesque'] leading-[34px]">
+                <div className="left-[28px] top-[15px] absolute text-center text-sky-950 text-2xl font-bold leading-[34px]">
                   1
                 </div>
               </div>
               <div className="flex flex-col justify-start items-start gap-5">
-                <div className="w-[482px] text-sky-950 text-2xl font-bold font-['Bricolage Grotesque'] leading-[34px]">
+                <div className="w-[482px] text-sky-950 text-2xl font-bold leading-[34px]">
                   Survey Data Management
                 </div>
-                <div className="w-[482px] text-neutral-600 text-base font-normal font-['Bricolage Grotesque'] leading-7">
+                <div className="w-[482px] text-neutral-600 text-base font-normal leading-7">
                   Renders Surveyor's data in a manner that provides easy access,
                   management and data-driven insight.
                 </div>
@@ -409,7 +363,7 @@ export const EfficientGISSolutions = () => {
           </div>
           <div className="flex flex-col justify-start items-start gap-5">
             <div className="w-[470px] px-[45px] py-[15px] bg-sky-950 rounded-[30px] flex justify-center items-center gap-2.5">
-              <div className="text-center text-white text-lg font-semibold font-['Bricolage Grotesque'] leading-[30px]">
+              <div className="text-center text-white text-lg font-semibold leading-[30px]">
                 Get Started Today
               </div>
             </div>
@@ -427,32 +381,6 @@ export const EfficientGISSolutions = () => {
   );
 };
 
-export const SignUpforOurSurvey = () => {
-  return (
-    <div className="mywrapper w-full h-[374px] px-[135px] py-[60px] bg-white flex-col justify-center items-center gap-2.5 inline-flex">
-      <div className="self-stretch h-[254px] flex-col justify-start items-center gap-[45px] flex">
-        <div className="w-[1170px] justify-between items-center inline-flex">
-          <div className="flex-col justify-start items-center gap-[18px] inline-flex">
-            <div className="text-center text-sky-950 text-[50px] font-extrabold font-['Bricolage Grotesque'] leading-[64px]">
-              Sign Up for Our Survey Data Management
-            </div>
-            <div className="w-[982px] text-center text-sky-950 text-base font-normal font-['Bricolage Grotesque'] leading-[30px]">
-              Don't miss out on the latest in GIS technology and insights.
-              Subscribe to our newsletter and be the first to know about new
-              features, industry trends, and expert tips.
-            </div>
-          </div>
-        </div>
-        <div className="w-[257px] h-[67px] px-5 py-6 bg-sky-950 rounded-[50px] justify-center items-center gap-2.5 inline-flex">
-          <div className="text-white text-lg font-semibold font-['Bricolage Grotesque']">
-            Subscribe
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 export const Revolutionizing = () => {
   return (
     <section className="mywrapper h-max py-16 bg-black lg:bg-red-800">
@@ -461,25 +389,25 @@ export const Revolutionizing = () => {
         <div className="flex flex-col h-full justify-center">
           <div className="pb-4 justify-start items-center gap-[15px] inline-flex">
             <div className="w-5 h-[0px] border-2 border-white"></div>
-            <div className="text-white text-xl font-medium font-['Bricolage Grotesque'] leading-[34px]">
+            <div className="text-white text-xl font-medium leading-[34px]">
               Our Services
             </div>
           </div>
           <div className="pb-6 items-center inline-flex">
             <div className="flex-col justify-start items-start inline-flex">
               <div className="justify-center items-center inline-flex">
-                <div className="text-sky-500 text-[50px] font-extrabold font-['Bricolage Grotesque'] leading-[54px]">
+                <div className="text-sky-500 text-[50px] font-extrabold leading-[54px]">
                   Revolutionizing
                 </div>
               </div>
-              <div className="self-stretch text-white text-[50px] font-extrabold font-['Bricolage Grotesque'] leading-[54px]">
+              <div className="self-stretch text-white text-[50px] font-extrabold leading-[54px]">
                 Industry Based
                 <br />
                 Geospatial Solutions
               </div>
             </div>
           </div>
-          <div className="pb-10 text-white text-lg font-normal font-['Bricolage Grotesque'] leading-[30px]">
+          <div className="pb-10 text-white text-lg font-normal leading-[30px]">
             Discover the art of seamless data management and visualization,
             tailored for your needs. Unleash the power of geospatial
             intelligence with ease.
@@ -497,36 +425,113 @@ export const Revolutionizing = () => {
   );
 };
 
-export const BelovedClientsSayings = () => {
+export const SignUpforOurSurvey = () => {
   return (
-    <div className="">
-      <img
-        className="w-full h-[946px]"
-        src="https://via.placeholder.com/1440x946"
-      />
+    <div className="mywrapper w-full min-h-[374px] pt-[60px] pb-24 bg-white flex-col justify-center items-center gap-2.5 inline-flex">
+      <div className="self-stretch h-[254px] flex-col justify-start items-center gap-[45px] flex">
+        <div className="w-full justify-between items-center inline-flex">
+          <div className="flex-col justify-start items-center gap-[18px] inline-flex">
+            <div className="text-center text-sky-950 text-[50px] font-extrabold leading-[64px]">
+              Sign Up for Our Survey Data Management
+            </div>
+            <div className="w-[90%] text-center text-sky-950 text-base font-normal leading-[30px]">
+              Don't miss out on the latest in GIS technology and insights.
+              Subscribe to our newsletter and be the first to know about new
+              features, industry trends, and expert tips.
+            </div>
+          </div>
+        </div>
+        <div className="max-w-[257px] w-full px-5 py-6 grid place-items-center bg-sky-950 rounded-[50px]">
+          <div className="text-white text-lg font-semibold">Subscribe</div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const BelovedClientsSayings = () => {
+  const testimonials = [
+    {
+      imgSrc: "https://via.placeholder.com/72x72",
+      text: "I am truly impressed by TwoNode Technologies' innovative GIS solution. It is a game-changer in the industry, offering new ways to access and manage survey-based data anywhere in the world.",
+      author: "Surv. Adebule Mariam - FOMSSURVEY",
+    },
+    {
+      imgSrc: "https://via.placeholder.com/72x72",
+      text: "It's truly wonderful to come across a solution that efficiently and effectively addresses the challenges we face. The convenience of storing and retrieving our records in a well-organized system is truly unmatched.",
+      author: "Karimah Dolapo - STENIK CONSULT",
+    },
+    {
+      imgSrc: "https://via.placeholder.com/72x72",
+      text: "I have always seen GIS as a fantasy but here we are a company really using GIS to solve the problem of Survey Based Data Management.",
+      author: "Aderayo - DOT POINTS",
+    },
+  ];
+
+  return (
+    <div className="mywrapper bord bg-black w-full py-16 min-h-[592px] flex-col justify-start items-center gap-[70px] inline-flex">
+      <div className="text-center text-white text-[50px] font-extrabold leading-[54px]">
+        What Our Beloved Clients Are Saying
+      </div>
+
+      <div className="flex w-full justify-center overflow-hidden items-start gap-[30px]">
+        <Carousel className="w-full">
+          <CarouselContent className="flex gap-7">
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem
+                key={index}
+                className="p-3 basis-full md:basis-1/2 2xl:basis-1/3"
+              >
+                <div className="w-full flex justify-center">
+                  <div className="px-5 py-10 bg-white rounded-[10px] flex-col justify-start items-start gap-2.5 inline-flex">
+                    <div className="flex-col justify-start items-center gap-5 flex">
+                      <img
+                        className="w-[72px] h-[72px] rounded-full border border-sky-950"
+                        src={testimonial.imgSrc}
+                        alt={`Testimonial from ${testimonial.author}`}
+                      />
+                      <div className="flex-col justify-center items-center gap-2.5 flex">
+                        <div className="justify-start items-center gap-1 inline-flex" />
+                        <div className="w-[330px] text-center text-neutral-600 text-base font-normal leading-7">
+                          {testimonial.text}
+                        </div>
+                      </div>
+                      <div className="text-center text-sky-950 text-base font-medium leading-7">
+                        {testimonial.author}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </div>
     </div>
   );
 };
 
 export const FeaturedNews = () => {
   return (
-    <div className="mywrapper w-full h-[623px] px-[135px] py-[70px] bg-gray-50 flex-col justify-start items-start gap-2.5 inline-flex">
-      <div className="self-stretch h-[483px] flex-col justify-start items-start gap-[50px] flex">
-        <div className="self-stretch text-neutral-900 text-5xl font-semibold font-['Bricolage Grotesque'] capitalize">
+    <div className="mywrapper w-full min-h-[623px] px-[135px] py-[70px] bg-gray-50 flex-col justify-start items-start gap-2.5 inline-flex">
+      <div className="self-stretch min-h-[483px] flex-col justify-start items-start gap-[50px] flex">
+        <div className="self-stretch text-neutral-900 text-5xl font-semibold capitalize">
           Featured News
         </div>
-        <div className="self-stretch justify-start items-center gap-10 inline-flex">
+        <div className="grid justify-items-center lg:grid-cols-2 gap-10">
           <img
-            className="w-[565px] h-[375px] rounded-[10px]"
+            className="max-w-[565px] w-full max-h-[375px] rounded-[10px]"
             src="https://via.placeholder.com/565x375"
           />
-          <div className="w-[525px] self-stretch flex-col justify-start items-start gap-[45px] inline-flex">
+          <div className="self-stretch flex-col justify-start items-start gap-[45px] inline-flex">
             <div className="self-stretch h-[260px] flex-col justify-start items-start gap-[30px] flex">
-              <div className="self-stretch text-neutral-900 text-xl font-medium font-['Bricolage Grotesque'] leading-[35px]">
+              <div className="self-stretch text-neutral-900 text-xl font-medium leading-[35px]">
                 Same Subscription with more Capabilities with ArcGIS Pro and
                 ArcOnline Licenses
               </div>
-              <div className="self-stretch text-neutral-900 text-base font-normal font-['Bricolage Grotesque'] leading-[30px]">
+              <div className="self-stretch text-neutral-900 text-base font-normal leading-[30px]">
                 TwoNode Technologies is thrilled to announce a long-term
                 partnership with sambus geospatial, the official distributor for
                 ESRI products.
@@ -536,7 +541,7 @@ export const FeaturedNews = () => {
               </div>
             </div>
             <div className="px-5 py-2.5 bg-sky-950 rounded-[5px] justify-center items-center gap-2.5 inline-flex">
-              <div className="text-white text-lg font-normal font-['Bricolage Grotesque'] leading-7">
+              <div className="text-white text-lg font-normal leading-7">
                 Read More
               </div>
             </div>
@@ -555,12 +560,12 @@ export const OurGallery = () => {
           <div className="flex-col justify-start items-center gap-[15px] flex">
             <div className="justify-start items-center gap-[15px] inline-flex">
               <div className="w-5 h-[0px] border-2 border-sky-950"></div>
-              <div className="text-sky-950 text-xl font-medium font-['Bricolage Grotesque'] leading-[34px]">
+              <div className="text-sky-950 text-xl font-medium leading-[34px]">
                 Our Gallery
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-[18px] flex">
-              <div className="text-center text-zinc-950 text-[32px] font-extrabold font-['Bricolage Grotesque'] leading-[54px]">
+              <div className="text-center text-zinc-950 text-[32px] font-extrabold leading-[54px]">
                 Take A View of Our Gallery
               </div>
             </div>
@@ -609,9 +614,7 @@ export const OurGallery = () => {
           </div>
         </div>
         <div className="w-[257px] h-[67px] px-5 py-6 bg-sky-950 rounded-[50px] justify-center items-center gap-2.5 inline-flex">
-          <div className="text-white text-lg font-semibold font-['Bricolage Grotesque']">
-            Load More
-          </div>
+          <div className="text-white text-lg font-semibold">Load More</div>
         </div>
       </div>
     </div>
@@ -622,13 +625,13 @@ export const FrequentlyAskedQuestions = () => {
   return (
     <div className="mywrapper w-full h-[450px] py-[75px] bg-white flex-col justify-start items-center inline-flex">
       <div className="h-[300px] flex-col justify-start items-center gap-[60px] flex">
-        <div className="text-center text-neutral-900 text-5xl font-semibold font-['Bricolage Grotesque'] capitalize">
+        <div className="text-center text-neutral-900 text-5xl font-semibold capitalize">
           Frequently Asked Questions
         </div>
         <div className="flex-col justify-start items-start gap-[18px] flex">
           <div className="flex-col justify-start items-start flex">
             <div className="w-[1170px] px-[30px] py-6 bg-gray-50 justify-between items-center inline-flex">
-              <div className="text-neutral-900 text-2xl font-bold font-['Bricolage Grotesque'] leading-[34px]">
+              <div className="text-neutral-900 text-2xl font-bold leading-[34px]">
                 What do we do at TwoNode Technologies?
               </div>
               <div className="w-5 h-5 relative" />
@@ -636,7 +639,7 @@ export const FrequentlyAskedQuestions = () => {
           </div>
           <div className="flex-col justify-start items-start flex">
             <div className="w-[1170px] px-[30px] py-6 bg-gray-50 justify-between items-center inline-flex">
-              <div className="text-neutral-900 text-2xl font-bold font-['Bricolage Grotesque'] leading-[34px]">
+              <div className="text-neutral-900 text-2xl font-bold leading-[34px]">
                 On what platform is your solutions built?
               </div>
               <div className="w-5 h-5 relative" />
@@ -658,48 +661,48 @@ export const ReachOutToUs = () => {
               <div className="flex-col justify-start items-start gap-2.5 flex">
                 <div className="justify-start items-center gap-[15px] inline-flex">
                   <div className="w-5 h-[0px] border-2 border-sky-950"></div>
-                  <div className="text-sky-950 text-xl font-medium font-['Bricolage Grotesque'] leading-[34px]">
+                  <div className="text-sky-950 text-xl font-medium leading-[34px]">
                     Get In Touch
                   </div>
                 </div>
                 <div className="self-stretch h-12 flex-col justify-start items-start gap-[18px] flex">
-                  <div className="text-sky-950 text-[40px] font-extrabold font-['Bricolage Grotesque']">
+                  <div className="text-sky-950 text-[40px] font-extrabold">
                     You Can Reach Out To Us!
                   </div>
                 </div>
               </div>
-              <div className="w-[498px] text-sky-950 text-[15px] font-normal font-['Bricolage Grotesque'] leading-tight">
+              <div className="w-[498px] text-sky-950 text-[15px] font-normal leading-tight">
                 Discover how our innovative GIS solution revolutionizes the
                 representation of extent and survey information.
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-6 flex">
               <div className="flex-col justify-start items-start gap-[15px] flex">
-                <div className="self-stretch text-sky-950 text-base font-medium font-['Bricolage Grotesque'] leading-7">
+                <div className="self-stretch text-sky-950 text-base font-medium leading-7">
                   Name
                 </div>
                 <div className="w-[520px] px-5 py-3.5 rounded-[5px] border border-zinc-200 justify-start items-center gap-2.5 inline-flex">
-                  <div className="text-neutral-600 text-base font-normal font-['Bricolage Grotesque'] leading-7">
+                  <div className="text-neutral-600 text-base font-normal leading-7">
                     Enter Name
                   </div>
                 </div>
               </div>
               <div className="flex-col justify-start items-start gap-[15px] flex">
-                <div className="self-stretch text-sky-950 text-base font-medium font-['Bricolage Grotesque'] leading-7">
+                <div className="self-stretch text-sky-950 text-base font-medium leading-7">
                   Email Address
                 </div>
                 <div className="w-[520px] px-5 py-3.5 rounded-[5px] border border-zinc-200 justify-start items-center gap-2.5 inline-flex">
-                  <div className="text-neutral-600 text-base font-normal font-['Bricolage Grotesque'] leading-7">
+                  <div className="text-neutral-600 text-base font-normal leading-7">
                     Enter Email Address
                   </div>
                 </div>
               </div>
               <div className="flex-col justify-start items-start gap-[15px] flex">
-                <div className="self-stretch text-sky-950 text-base font-medium font-['Bricolage Grotesque'] leading-7">
+                <div className="self-stretch text-sky-950 text-base font-medium leading-7">
                   Your Message
                 </div>
                 <div className="w-[520px] h-[138px] px-5 py-3.5 rounded-[5px] border border-zinc-200 justify-start items-start gap-2.5 inline-flex">
-                  <div className="text-neutral-600 text-base font-normal font-['Bricolage Grotesque'] leading-7">
+                  <div className="text-neutral-600 text-base font-normal leading-7">
                     Enter Message
                   </div>
                 </div>
@@ -707,7 +710,7 @@ export const ReachOutToUs = () => {
             </div>
             <div className="flex-col justify-start items-start gap-5 flex">
               <div className="w-[520px] px-[45px] py-[15px] bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex">
-                <div className="text-center text-white text-lg font-semibold font-['Bricolage Grotesque'] leading-[30px]">
+                <div className="text-center text-white text-lg font-semibold leading-[30px]">
                   Submit
                 </div>
               </div>
