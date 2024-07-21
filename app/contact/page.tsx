@@ -1,23 +1,52 @@
-import Banner from "@/components/Banner";
 import Navbar from "@/components/Navbar";
-import { SurveyTrustFirms } from "@/components/HomeComponents";
+import Banner from "@/components/Banner";
+import {
+  EfficientGISSolutions,
+  SignUpforOurSurvey,
+  Revolutionizing,
+  SurveyTrustFirms,
+  BelovedClientsSayings,
+  FeaturedNews,
+  OurGallery,
+  FrequentlyAskedQuestions,
+  ReachOutToUs,
+} from "@/components/HomeComponents";
+import Footer from "@/components/Footer";
 
-const page = () => {
+export default function Home() {
   return (
-    <main className="">
+    <section className="bg-teal-5000">
       <Navbar />
       <Banner />
 
-      {/* Trending Campaign Section */}
+      {/* Survey Firms that Trust our Solution */}
       <SurveyTrustFirms />
 
-      {/* CTA Section */}
+      {/* Efficient GIS Solutions */}
+      <EfficientGISSolutions />
 
-      {/* CAtegories Section */}
+      {/* Revolutionizing industry Based Geospatial Solutions */}
+      <Revolutionizing />
+
+      {/* Sign Up for Our Survey Data Management */}
+      <SignUpforOurSurvey />
+
+      {/* What Our Beloved Clients Are Saying */}
+      <BelovedClientsSayings />
+      {/* Featured News */}
+
+      {/* Take A View of Our Gallery */}
+      <FeaturedNews />
+      <OurGallery />
+      <FrequentlyAskedQuestions />
+      <ReachOutToUs />
+
+      {/* Frequently Asked Questions */}
+
+      {/* You Can Reach Out To Us! */}
 
       {/* Footer Section */}
-    </main>
+      <Footer />
+    </section>
   );
-};
-
-export default page;
+}

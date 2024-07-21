@@ -1,4 +1,21 @@
 const Footer = () => {
+  const Logo = (
+    <svg
+      width="59"
+      height="74"
+      viewBox="0 0 59 74"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M46.0488 0H59V13.0588H46.0488V0Z" fill="#001F3F" />
+      <path d="M0 60.9412H12.9512V74H0V60.9412Z" fill="#001F3F" />
+      <path
+        d="M12.9512 53.6863L46.0488 20.3137L44.0137 18.2617L10.9161 51.6343L12.9512 53.6863Z"
+        fill="#001F3F"
+      />
+    </svg>
+  );
+
   return (
     <div className="mywrapper w-full min-h-[505px] py-[90px] bg-white flex-col justify-start items-start gap-2.5 inline-flex">
       <div className="flex-col justify-start items-start gap-[35px] flex">
@@ -12,7 +29,7 @@ const Footer = () => {
                     <br />
                   </span>
                   <span className="text-sky-950 text-[22px] font-bold font-['Bricolage Grotesque'] leading-[17px]">
-                    {" "}
+                    {Logo}
                   </span>
                   <span className="text-sky-950 text-2xl font-bold font-['Bricolage Grotesque']">
                     Technologies
