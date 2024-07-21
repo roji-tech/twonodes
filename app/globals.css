@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+:root {
+  font-family: "Bricolage Grotesque";
+  font-size: 15px;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  /* font-variation-settings: "wdth" 100; */
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* Track */
+body::-webkit-scrollbar {
+  background: #001f3f;
+  width: 10px;
+  /* width of the scrollbar */
+}
+
+body::-webkit-scrollbar:hover {
+  background: #00bfff;
+  width: 8px;
+  /* width of the scrollbar */
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  /* color of the scrollbar handle */
+  background: #00bfff;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #001f3f;
+  /* color of the scrollbar handle on hover */
+}
+
+.heroImg {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(/heroBg.png) lightgray 50% / cover no-repeat;
+}
+
+.mywrapper {
+  @apply px-[3%] md:px-[4%] lg:px-[8%] w-full max-w-full;
+}
+
+.bodr {
+  @apply border-sky-800 border-8;
+}
