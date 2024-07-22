@@ -29,7 +29,7 @@ const SurfBoard = () => {
         <div className="flex-col justify-start items-center gap-12 flex">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
             <img
-              className="max-w-[570px] max-h-[570px] rounded-[10px]"
+              className="max-w-full w-full max-h-full rounded-[10px]"
               src="https://via.placeholder.com/570x570"
             />
             <div className="min-h-[434px] justify-center items-start gap-[30px] grid grid-cols-1 lg:grid-cols-2">
