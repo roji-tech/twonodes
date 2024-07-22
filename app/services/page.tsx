@@ -9,8 +9,8 @@ import {
   FeaturedNews,
   OurGallery,
   FrequentlyAskedQuestions,
-  ReachOutToUs,
 } from "@/components/HomeComponents";
+import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
 import SurfBoard from "./SurfBoard";
 
