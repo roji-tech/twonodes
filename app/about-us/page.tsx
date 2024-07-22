@@ -1,23 +1,19 @@
 import Navbar from "@/components/Navbar";
-import Banner from "@/components/Banner";
 import {
-  EfficientGISSolutions,
   SignUpforOurSurvey,
-  Revolutionizing,
   SurveyTrustFirms,
   BelovedClientsSayings,
-  FeaturedNews,
-  OurGallery,
   FrequentlyAskedQuestions,
   ReachOutToUs,
 } from "@/components/HomeComponents";
 import Footer from "@/components/Footer";
+import Aboutbanner from "./Aboutbanner";
 
 export default function Home() {
   return (
     <section className="bg-teal-5000">
       <Navbar />
-      <Banner />
+      <Aboutbanner />
 
       {/* Survey Firms that Trust our Solution */}
       <SurveyTrustFirms />
