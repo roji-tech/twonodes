@@ -33,7 +33,7 @@ const Navbar = () => {
                 ))}
               </div>
               <Link
-                href={"#services"}
+                href={"/login"}
                 className="cursor-pointer w-[143px] h-11 px-5 py-2 bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
               >
                 <div className="text-center text-white text-base font-semibold font-['Bricolage Grotesque'] leading-7">
