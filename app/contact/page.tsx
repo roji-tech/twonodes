@@ -22,7 +22,7 @@ export default function Home() {
 
       {/* You Can Reach Out To Us! */}
       <ReachOutToUs />
-      {/* <OurMap /> */}
+      <OurMap />
 
       {/* Footer Section */}
       <Footer />
