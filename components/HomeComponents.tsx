@@ -207,7 +207,7 @@ export const SignUpforOurSurvey = () => {
     <div className="mywrapper w-full min-h-[374px] pt-[60px] pb-24 bg-white flex-col justify-center items-center gap-2.5 inline-flex">
       <div className="self-stretch h-[254px] flex-col justify-start items-center gap-[45px] flex">
         <div className="w-full justify-between items-center inline-flex">
-          <div className="flex-col justify-start items-center gap-[18px] inline-flex">
+          <div className="w-full flex-col justify-start items-center gap-[18px] inline-flex">
             <div className="text-center text-sky-950 text-[50px] font-extrabold leading-[64px]">
               Sign Up for Our Survey Data Management
             </div>
