@@ -33,17 +33,18 @@ export default function Home() {
 
       {/* What Our Beloved Clients Are Saying */}
       <BelovedClientsSayings />
+
       {/* Featured News */}
+      <FeaturedNews />
 
       {/* Take A View of Our Gallery */}
-      <FeaturedNews />
       <OurGallery />
-      <FrequentlyAskedQuestions />
-      <ReachOutToUs />
 
       {/* Frequently Asked Questions */}
+      <FrequentlyAskedQuestions />
 
       {/* You Can Reach Out To Us! */}
+      <ReachOutToUs />
 
       {/* Footer Section */}
       <Footer />

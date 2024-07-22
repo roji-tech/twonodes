@@ -246,7 +246,7 @@ export const BelovedClientsSayings = () => {
   ];
 
   return (
-    <div className="mywrapper bord bg-black w-full py-16 min-h-[592px] flex-col justify-start items-center gap-[70px] inline-flex">
+    <div className="mywrapper bg-black w-full py-16 min-h-[592px] flex-col justify-start items-center gap-[70px] inline-flex">
       <div className="text-center text-white text-[50px] font-extrabold leading-[54px]">
         What Our Beloved Clients Are Saying
       </div>
@@ -453,7 +453,7 @@ export const ReachOutToUs = () => {
   return (
     <div className="mywrapper w-full min-h-[929px] px-[135px] py-[75px] bg-gray-50 flex-col justify-center items-start gap-12 inline-flex">
       <div className="w-full grid lg:grid-cols-2 grid-cols-1 justify-items-center gap-[50px]">
-        <div className="min-w-[571px] min-h-[738px] px-[50px] py-[34px] bg-white rounded-[10px] shadow justify-center items-center gap-2.5 flex">
+        <div className="max-w-[571px] min-h-[738px] px-[50px] py-[34px] bg-white rounded-[10px] shadow justify-center items-center gap-2.5 flex">
           <div className="flex-col justify-start items-start gap-[30px] inline-flex">
             <div className="flex-col justify-start items-start gap-[15px] flex">
               <div className="flex-col justify-start items-start gap-2.5 flex">
@@ -515,7 +515,7 @@ export const ReachOutToUs = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[530px] w-full h-full bord bg-black/opacity-20 rounded-lg" />
+        <div className="max-w-[530px] w-full h-full bg-black/opacity-20 rounded-lg" />
       </div>
     </div>
   );
