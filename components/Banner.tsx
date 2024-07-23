@@ -2,8 +2,6 @@ import Link from "next/link";
 import React from "react";
 // import Navbar from "./Navbar";
 
-
-
 const Banner = () => {
   return (
     <div className="mywrapper heroImg bg-cover overflow-hidden">
@@ -35,11 +33,14 @@ const Banner = () => {
               </div>
             </div>
 
-            <div className="w-[min(100%, 470px)] px-[45px] py-[15px] bg-gray-900 rounded-[30px] justify-center items-center gap-2.5 inline-flex">
+            <Link
+              href={"/services"}
+              className="w-[min(100%, 470px)] px-[45px] py-[15px] bg-gray-900 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+            >
               <div className="text-center text-white text-lg font-semibold font-['Bricolage Grotesque'] leading-[30px]">
                 Get Started
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

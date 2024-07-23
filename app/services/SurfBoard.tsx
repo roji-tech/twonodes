@@ -1,6 +1,4 @@
-import React from "react";
-
-const SurfBoard = () => {
+const SurfBoard = ({ text = "What You Need To Know", showBtn = true }) => {
   return (
     <section className="mywrapper w-full min-h-[1111px] py-[75px] bg-white flex-col justify-start items-center gap-2.5 inline-flex">
       <div className="flex-col justify-start items-center gap-[70px] flex">
@@ -9,7 +7,7 @@ const SurfBoard = () => {
             <div className="justify-start items-center gap-[15px] inline-flex">
               <div className="w-5 h-[0px] border-2 border-sky-950"></div>
               <div className="text-sky-950 text-xl font-medium leading-[34px]">
-                What You Need To Know
+                {text}
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-[18px] flex">
@@ -30,14 +28,11 @@ const SurfBoard = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
             <img
               className="max-w-full w-full max-h-full rounded-[10px]"
-              src="https://via.placeholder.com/570x570"
+              src="/surfboardGlobe.png"
             />
             <div className="min-h-[434px] justify-center items-start gap-[30px] grid grid-cols-1 lg:grid-cols-2">
               <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
-                <img
-                  className="max-w-16 h-16"
-                  src="https://via.placeholder.com/64x64"
-                />
+                <img className="max-w-16 h-16" src="/smartForms.png" />
                 <div className="flex-col justify-start items-center gap-3 flex">
                   <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
                     Smart Forms
@@ -50,10 +45,7 @@ const SurfBoard = () => {
                 </div>
               </div>
               <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
-                <img
-                  className="w-16 h-16"
-                  src="https://via.placeholder.com/64x64"
-                />
+                <img className="w-16 h-16" src="/dashboard.png" />
                 <div className="flex-col justify-start items-center gap-3 flex">
                   <div className="w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
                     Dashboard
@@ -65,10 +57,7 @@ const SurfBoard = () => {
                 </div>
               </div>
               <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
-                <img
-                  className="w-16 h-16"
-                  src="https://via.placeholder.com/64x64"
-                />
+                <img className="w-16 h-16" src="/recordViewer.png" />
                 <div className="flex-col justify-start items-center gap-3 flex">
                   <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
                     Record Viewer
@@ -81,10 +70,7 @@ const SurfBoard = () => {
                 </div>
               </div>
               <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
-                <img
-                  className="w-16 h-16"
-                  src="https://via.placeholder.com/64x64"
-                />
+                <img className="w-16 h-16" src="/fieldsoffice.png" />
                 <div className="flex-col justify-start items-center gap-3 flex">
                   <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
                     Field - Office Module
@@ -97,13 +83,17 @@ const SurfBoard = () => {
               </div>
             </div>
           </div>
-          <div className="w-full flex-col justify-start items-center gap-5 flex">
-            <div className="max-w-[470px] w-full px-[45px] py-[15px] bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex">
-              <div className="text-center text-white text-lg font-semibold leading-[30px]">
-                Subscribe
+          {showBtn ? (
+            <div className="w-full flex-col justify-start items-center gap-5 flex">
+              <div className="max-w-[470px] w-full px-[45px] py-[15px] bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex">
+                <div className="text-center text-white text-lg font-semibold leading-[30px]">
+                  Subscribe
+                </div>
               </div>
             </div>
-          </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </section>

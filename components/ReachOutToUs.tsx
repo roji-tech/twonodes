@@ -61,7 +61,7 @@ export const ReachOutToUs = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[530px] w-full h-full bg-black opacity-20 rounded-lg" />
+        <img src="reachout.png" className="max-w-[530px] w-full h-full bg-black rounded-lg" />
       </div>
     </div>
   );

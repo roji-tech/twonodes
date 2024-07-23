@@ -52,7 +52,7 @@ const FeaturedNews = () => {
           </div>
         </div>
         <img
-          className="self-stretch h-[501.43px]"
+          className="self-stretch max-h-[501.43px]"
           src="https://via.placeholder.com/1168x501"
         />
         <div className="w-full justify-between items-center inline-flex">

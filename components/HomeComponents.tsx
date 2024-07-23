@@ -139,11 +139,14 @@ export const EfficientGISSolutions = () => {
             </div>
           </div>
           <div className="flex flex-col justify-start items-start gap-5">
-            <div className="w-[470px] px-[45px] py-[15px] bg-sky-950 rounded-[30px] flex justify-center items-center gap-2.5">
+            <Link
+              href={"/services"}
+              className="max-w-[470px] w-full px-[45px] py-[15px] bg-sky-950 rounded-[30px] flex justify-center items-center gap-2.5"
+            >
               <div className="text-center text-white text-lg font-semibold leading-[30px]">
                 Get Started Today
               </div>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="max-w-[530px] lg:basis-1/2 max-h-[642px] bg-black/opacity-20 rounded-lg mt-6 lg:mt-0 lg:ml-6 flex items-center">
@@ -202,7 +205,9 @@ export const Revolutionizing = () => {
   );
 };
 
-export const SignUpforOurSurvey = () => {
+export const SignUpforOurSurvey = ({
+  url = "/https://survey123.arcgis.com/share/a0d72b89d7a14eae9da311fdae8fc5c5",
+}) => {
   return (
     <div className="mywrapper w-full min-h-[374px] pt-[60px] pb-24 bg-white flex-col justify-center items-center gap-2.5 inline-flex">
       <div className="self-stretch h-[254px] flex-col justify-start items-center gap-[45px] flex">
@@ -218,9 +223,12 @@ export const SignUpforOurSurvey = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[257px] w-full px-5 py-6 grid place-items-center bg-sky-950 rounded-[50px]">
+        <Link
+          href={url}
+          className="max-w-[257px] w-full px-5 py-6 grid place-items-center bg-sky-950 rounded-[50px]"
+        >
           <div className="text-white text-lg font-semibold">Subscribe</div>
-        </div>
+        </Link>
       </div>
     </div>
   );
@@ -391,9 +399,12 @@ export const OurGallery = () => {
           </div>
         </div>
 
-        <div className="w-[257px] h-[67px] px-5 py-6 bg-sky-950 rounded-[50px] justify-center items-center gap-2.5 inline-flex">
+        <Link
+          href={"/gallery"}
+          className="w-[257px] h-[67px] px-5 py-6 bg-sky-950 rounded-[50px] justify-center items-center gap-2.5 inline-flex"
+        >
           <div className="text-white text-lg font-semibold">Load More</div>
-        </div>
+        </Link>
       </div>
     </div>
   );
@@ -448,5 +459,3 @@ export const FrequentlyAskedQuestions = () => {
     </div>
   );
 };
-
-

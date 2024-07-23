@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const SurfBoardSubscriptionPlans = () => {
@@ -85,16 +84,11 @@ const SurfBoardSubscriptionPlans = () => {
             </div>
           </div>
         </div>
-        <Link
-          href={
-            "/https://survey123.arcgis.com/share/a0d72b89d7a14eae9da311fdae8fc5c5"
-          }
-          className="max-w-[520px] w-full px-[45px] py-[15px] bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
-        >
+        <div className="max-w-[520px] w-full px-[45px] py-[15px] bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex">
           <div className="text-center text-white text-lg font-semibold font-['Bricolage Grotesque'] leading-[30px]">
             Subscribe
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   );
