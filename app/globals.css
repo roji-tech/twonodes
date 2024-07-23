@@ -62,3 +62,7 @@ body::-webkit-scrollbar-thumb:hover {
 .bord {
   @apply border-sky-800 border-8;
 }
+
+.RevolutionizingBg {
+  background: url(/RevolutionizingBg.png);
+}

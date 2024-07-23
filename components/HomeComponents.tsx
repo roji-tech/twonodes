@@ -163,7 +163,7 @@ export const EfficientGISSolutions = () => {
 
 export const Revolutionizing = () => {
   return (
-    <section className="mywrapper h-max py-16 bg-black lg:bg-red-800">
+    <section className="RevolutionizingBg mywrapper h-max py-16 bg-black lg:bg-red-800">
       <div className="h-full w-full grid grid-cols-1 lg:grid-cols-2">
         <div className="hidden lg:flex"></div>
         <div className="flex flex-col h-full justify-center">
@@ -237,17 +237,17 @@ export const SignUpforOurSurvey = ({
 export const BelovedClientsSayings = () => {
   const testimonials = [
     {
-      imgSrc: "https://via.placeholder.com/72x72",
+      imgSrc: "/saying1.png",
       text: "I am truly impressed by TwoNode Technologies' innovative GIS solution. It is a game-changer in the industry, offering new ways to access and manage survey-based data anywhere in the world.",
       author: "Surv. Adebule Mariam - FOMSSURVEY",
     },
     {
-      imgSrc: "https://via.placeholder.com/72x72",
+      imgSrc: "saying2.png",
       text: "It's truly wonderful to come across a solution that efficiently and effectively addresses the challenges we face. The convenience of storing and retrieving our records in a well-organized system is truly unmatched.",
       author: "Karimah Dolapo - STENIK CONSULT",
     },
     {
-      imgSrc: "https://via.placeholder.com/72x72",
+      imgSrc: "saying3.png",
       text: "I have always seen GIS as a fantasy but here we are a company really using GIS to solve the problem of Survey Based Data Management.",
       author: "Aderayo - DOT POINTS",
     },
@@ -308,7 +308,7 @@ export const FeaturedNews = () => {
         <div className="grid justify-items-center lg:grid-cols-2 gap-10">
           <img
             className="max-w-[565px] w-full max-h-[375px] rounded-[10px]"
-            src="https://via.placeholder.com/565x375"
+            src="FeaturedNews.png"
           />
           <div className="self-stretch flex-col justify-start items-start gap-[45px] inline-flex">
             <div className="self-stretch h-[260px] flex-col justify-start items-start gap-[30px] flex">
@@ -360,41 +360,35 @@ export const OurGallery = () => {
           <div className="flex justify-center md:justify-start items-center gap-2.5">
             <img
               className="w-[270.23px] h-[652px] rounded-2xl"
-              src="https://via.placeholder.com/270x652"
+              src="gal1.png"
             />
           </div>
           <div className="w-full md:w-[270.54px] flex flex-col justify-start items-start gap-[30px]">
             <div className="w-full flex justify-center md:justify-start items-center gap-2.5">
               <img
-                className="w-[270.23px] h-[382px] rounded-2xl"
-                src="https://via.placeholder.com/270x382"
+                className="max-w-[270.23px] max-h-[382px] rounded-2xl"
+                src="gal2.png"
               />
             </div>
-            <div className="w-full h-60 flex flex-col justify-start items-start gap-2.5">
-              <img
-                className="w-full h-60 rounded-2xl"
-                src="https://via.placeholder.com/271x240"
-              />
+            <div className="w-full min-h-60 flex flex-col justify-start items-start gap-2.5">
+              <img className="max-w-full max-h-60 rounded-2xl" src="gal3.png" />
             </div>
           </div>
-          <div className="w-full md:w-[270.54px] flex flex-col justify-start items-start gap-[30px]">
+          <div className="w-full md:min-w-[270.54px] flex flex-col justify-start items-start gap-[30px]">
             <div className="w-full h-60 flex flex-col justify-start items-start gap-2.5">
-              <img
-                className="w-full h-60 rounded-2xl"
-                src="https://via.placeholder.com/271x240"
-              />
+              <img className="w-full h-60 rounded-2xl" src="gal4.png" />
             </div>
             <div className="w-full flex justify-center md:justify-start items-center gap-2.5">
               <img
-                className="w-[270.23px] h-[382px] rounded-2xl"
-                src="https://via.placeholder.com/270x382"
+                className="max-w-[270.23px] max-h-[382px] rounded-2xl"
+                src="gal5.png"
               />
             </div>
           </div>
           <div className="flex justify-center md:justify-start items-center gap-2.5">
             <img
-              className="w-[270.23px] h-[652px] rounded-2xl"
-              src="https://via.placeholder.com/270x652"
+              className="max-w-[270.23px] min-h-[652px] rounded-2xl"
+              src="gal6.png"
             />
           </div>
         </div>
