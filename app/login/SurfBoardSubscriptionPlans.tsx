@@ -74,7 +74,7 @@ const SurfBoardSubscriptionPlans = () => {
                   Advanced
                 </div>
                 <div className="max-w-[290.67px] text-center text-slate-800 text-base font-medium font-['Bricolage Grotesque'] leading-tight">
-                  Do you do an average of 25 jobs per quarter?
+                  Do you do more than 25 jobs per quarter?
                 </div>
                 <div className="max-w-[290.67px] text-center text-neutral-600 text-sm font-normal font-['Bricolage Grotesque'] leading-[18.20px]">
                   The Advanced Plan allows you to manage up to 220 records

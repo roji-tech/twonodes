@@ -33,7 +33,7 @@ const SurfBoard = () => {
               src="https://via.placeholder.com/570x570"
             />
             <div className="min-h-[434px] justify-center items-start gap-[30px] grid grid-cols-1 lg:grid-cols-2">
-              <div className="flex-col justify-start items-center gap-6 inline-flex">
+              <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
                 <img
                   className="max-w-16 h-16"
                   src="https://via.placeholder.com/64x64"
@@ -49,7 +49,7 @@ const SurfBoard = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex-col justify-start items-center gap-6 inline-flex">
+              <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
                 <img
                   className="w-16 h-16"
                   src="https://via.placeholder.com/64x64"
@@ -64,7 +64,7 @@ const SurfBoard = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex-col justify-start items-center gap-6 inline-flex">
+              <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
                 <img
                   className="w-16 h-16"
                   src="https://via.placeholder.com/64x64"
@@ -80,7 +80,7 @@ const SurfBoard = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex-col justify-start items-center gap-6 inline-flex">
+              <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
                 <img
                   className="w-16 h-16"
                   src="https://via.placeholder.com/64x64"
@@ -97,8 +97,8 @@ const SurfBoard = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col justify-start items-start gap-5 flex">
-            <div className="max-w-[470px] px-[45px] py-[15px] bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex">
+          <div className="w-full flex-col justify-start items-center gap-5 flex">
+            <div className="max-w-[470px] w-full px-[45px] py-[15px] bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex">
               <div className="text-center text-white text-lg font-semibold leading-[30px]">
                 Subscribe
               </div>
