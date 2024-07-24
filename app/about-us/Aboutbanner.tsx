@@ -35,7 +35,7 @@ const Aboutbanner = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[635px] w-full min-h-[778px] bg-black/opacity-20 rounded-tl-[10px] rounded-bl-[10px]" />
+        <img src="/about.png" className="max-w-[635px] w-full min-h-[778px] bg-black/opacity-20 rounded-tl-[10px] rounded-bl-[10px]" />
       </div>
     </section>
   );
