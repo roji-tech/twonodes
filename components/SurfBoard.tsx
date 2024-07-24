@@ -33,7 +33,11 @@ const SurfBoard = ({ text = "What You Need To Know", showBtn = true }) => {
               src="/surfboardGlobe.png"
             />
             <div className="min-h-[434px] justify-center items-start gap-[30px] grid grid-cols-1 lg:grid-cols-2">
-              <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
+              <Link
+                target="_blank"
+                href={"https://survey123.arcgis.com/surveys"}
+                className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex"
+              >
                 <img className="max-w-16 h-16" src="/smartForms.png" />
                 <div className="flex-col justify-start items-center gap-3 flex">
                   <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
@@ -45,8 +49,12 @@ const SurfBoard = ({ text = "What You Need To Know", showBtn = true }) => {
                     completed.
                   </div>
                 </div>
-              </div>
-              <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
+              </Link>
+              <Link
+                target="_blank"
+                href={"https://www.arcgis.com/apps/dashboards/home"}
+                className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex"
+              >
                 <img className="w-16 h-16" src="/dashboard.png" />
                 <div className="flex-col justify-start items-center gap-3 flex">
                   <div className="w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
@@ -57,8 +65,14 @@ const SurfBoard = ({ text = "What You Need To Know", showBtn = true }) => {
                     records.
                   </div>
                 </div>
-              </div>
-              <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
+              </Link>
+              <Link
+                target="_blank"
+                href={
+                  "https://www.arcgis.com/apps/instantgallery/index.html?tab=myApps"
+                }
+                className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex"
+              >
                 <img className="w-16 h-16" src="/recordViewer.png" />
                 <div className="flex-col justify-start items-center gap-3 flex">
                   <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
@@ -70,7 +84,7 @@ const SurfBoard = ({ text = "What You Need To Know", showBtn = true }) => {
                     specific results.
                   </div>
                 </div>
-              </div>
+              </Link>
               <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
                 <img className="w-16 h-16" src="/fieldsoffice.png" />
                 <div className="flex-col justify-start items-center gap-3 flex">
