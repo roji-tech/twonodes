@@ -105,7 +105,7 @@ export const FeaturedNews = () => {
   return (
     <div className="mywrapper w-full min-h-[623px] px-[135px] py-[70px] bg-gray-50 flex-col justify-start items-start gap-2.5 inline-flex">
       <div className="self-stretch min-h-[483px] flex-col justify-start items-start gap-[50px] flex">
-        <div className="self-stretch text-neutral-900 text-5xl font-semibold capitalize">
+        <div className="self-stretch text-neutral-900 text-4xl md:text-5xl font-semibold capitalize">
           Featured News
         </div>
         <div className="grid justify-items-center lg:grid-cols-2 gap-10">

@@ -27,7 +27,7 @@ export const FrequentlyAskedQuestions = () => {
   return (
     <div className="mywrapper w-full min-h-[450px] py-[75px] bg-white flex-col justify-start items-center inline-flex">
       <div className="w-full min-h-[300px] flex-col justify-start items-center gap-[60px] flex">
-        <div className="text-center text-neutral-900 text-5xl font-semibold capitalize">
+        <div className="text-center text-neutral-900 text-4xl md:text-5xl font-semibold capitalize">
           Frequently Asked Questions
         </div>
 
