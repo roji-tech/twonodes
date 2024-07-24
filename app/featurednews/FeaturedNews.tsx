@@ -17,12 +17,12 @@ const FeaturedNews = () => {
         </div>
       </div>
       <div className="self-stretch flex-col justify-start items-start gap-10 flex">
-        <div className="self-stretch min-h-[536px] flex-col justify-start items-start gap-[35px] flex">
-          <div className="self-stretch min-h-[186px] flex-col justify-start items-start gap-6 flex">
+        <div className="self-stretch flex-col justify-start items-start gap-[10px] flex">
+          <div className="self-stretch flex-col justify-start items-start gap-6 flex">
             <div className="self-stretch text-[#0c0e12] text-lg font-medium">
               Wednesday, July 17, 2024 · 2 Min Read
             </div>
-            <div className="self-stretch text-[#0c0e12] text-[50px] font-semibold leading-[70px]">
+            <div className="self-stretch text-[#0c0e12] text-4xl font-semibold leading-[70px]">
               Same Subscription with more capabilities with ArcGIS Pro and
               ArcOnline licenses.
             </div>
@@ -32,23 +32,26 @@ const FeaturedNews = () => {
               TwoNode Technologies is thrilled to announce a long-term
               partnership with sambus geospatial, the official distributor for
               ESRI products. <br />
-              This partnership is to provide ultra-specific capabilities beyond
-              your imagination.
+              This partnership is to provide ultra-specific capabilities{" "}
+              <b className="text-2xl italic inline-block">beyond your imagination.</b>
               <br />
               What you stand to benefit:
               <br />
             </span>
-            <span className="text-[#0c0e12] text-xl font-normal leading-[30px]">
-              ArcGIS Pro Advanced, extensions, and dozens of ready-to-use apps
-              <br />
-              ArcGIS Living Atlas of the World with maps and data on thousands
-              of topics, including access to foundational content from Esri{" "}
-              <br />
-              Software updates
-              <br />
-              Unlimited access to self-paced e-learning through the Esri
-              Training website
-            </span>
+            <ul className="text-[#0c0e12] text-xl font-normal leading-[30px] list-inside list-disc p-3">
+              <li>
+                ArcGIS Pro Advanced, extensions, and dozens of ready-to-use apps
+              </li>
+              <li>
+                ArcGIS Living Atlas of the World with maps and data on thousands
+                of topics, including access to foundational content from Esri{" "}
+              </li>
+              <li>Software updates</li>
+              <li>
+                Unlimited access to self-paced e-learning through the Esri
+                Training website
+              </li>
+            </ul>
           </div>
         </div>
         <div className="w-full gap-8 flex flex-col items-center justify-center">
