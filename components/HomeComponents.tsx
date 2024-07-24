@@ -8,8 +8,6 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 
-
-
 export const Revolutionizing = () => {
   return (
     <section className="RevolutionizingBg mywrapper h-max py-16 bg-black">
@@ -208,7 +206,7 @@ export const OurGallery = () => {
           </div>
         </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center  items-center gap-[20px]">
-          <div className="flex justify-center md:justify-start items-center gap-2.5">
+          {/* <div className="flex justify-center md:justify-start items-center gap-2.5">
             <img
               className="w-[270.23px] h-[652px] rounded-2xl"
               src="gal1.png"
@@ -247,7 +245,27 @@ export const OurGallery = () => {
               className="max-w-[270.23px] min-h-[652px] rounded-2xl"
               src="gal6.png"
             />
-          </div>
+          </div> */}
+          <img
+            className="w-full max-w-[270.229px] max-h-[652px]"
+            src="/homegal1.png"
+            alt=""
+          />
+          <img
+            className="w-full max-w-[270.229px] max-h-[652px]"
+            src="/homegal2.png"
+            alt=""
+          />
+          <img
+            className="w-full max-w-[270.229px] max-h-[652px]"
+            src="/homegal3.png"
+            alt=""
+          />
+          <img
+            className="w-full max-w-[270.229px] max-h-[652px]"
+            src="/homegal4.png"
+            alt=""
+          />
         </div>
 
         <Link

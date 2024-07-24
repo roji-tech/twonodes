@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   const Logo = (
     <svg
@@ -39,7 +41,12 @@ const Footer = () => {
                 Location: 58 ,Kudirat Abiola Way Oregun, Ikeja, Lagos.
               </div>
               <div className="justify-start items-start gap-3 flex">
-                <div className="w-9 h-9 relative">
+                <Link
+                  href={
+                    "https://www.linkedin.com/company/twonode-technologies-limited/about/"
+                  }
+                  className="w-9 h-9 relative"
+                >
                   <svg
                     width="36"
                     height="36"
@@ -55,8 +62,8 @@ const Footer = () => {
                       fill="white"
                     />
                   </svg>
-                </div>
-                <div className="w-9 h-9 relative">
+                </Link>
+                <Link href={"https://x.com/TwoNodeTech"} className="w-9 h-9">
                   <svg
                     width="36"
                     height="36"
@@ -77,8 +84,13 @@ const Footer = () => {
                       fill="#001F3F"
                     />
                   </svg>
-                </div>
-                <div className="w-9 h-9 relative">
+                </Link>
+                <Link
+                  href={
+                    "https://www.instagram.com/twonodetechnologies/?igsh=NWJneXF6eDJrMHNy&utm_source=qr"
+                  }
+                  className="w-9 h-9 relative"
+                >
                   <svg
                     width="36"
                     height="36"
@@ -103,8 +115,11 @@ const Footer = () => {
                       fill="#001F3F"
                     />
                   </svg>
-                </div>
-                <div className="w-9 h-9 relative">
+                </Link>
+                <Link
+                  href={"https://x.com/TwoNodeTech"}
+                  className="w-9 h-9 relative"
+                >
                   <svg
                     width="36"
                     height="36"
@@ -125,7 +140,7 @@ const Footer = () => {
                       fill="#001F3F"
                     />
                   </svg>
-                </div>
+                </Link>
               </div>
             </div>
             <div className="w-full basis-1/2 justify-between items-start gap-[50px] flex">

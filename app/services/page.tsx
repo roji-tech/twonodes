@@ -6,7 +6,7 @@ import {
 import { FrequentlyAskedQuestions } from "@/components/FrequentlyAskedQuestions";
 import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
-import SurfBoard from "./SurfBoard";
+import SurfBoard from "../../components/SurfBoard";
 import { SurveyTrustFirms } from "@/components/SurveyTrustFirms";
 import { Revolutionizing } from "./Revol";
 
