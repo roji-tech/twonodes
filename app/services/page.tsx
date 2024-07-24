@@ -2,8 +2,8 @@ import Navbar from "@/components/Navbar";
 import {
   SignUpforOurSurvey,
   BelovedClientsSayings,
-  FrequentlyAskedQuestions,
 } from "@/components/HomeComponents";
+import { FrequentlyAskedQuestions } from "@/components/FrequentlyAskedQuestions";
 import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
 import SurfBoard from "./SurfBoard";

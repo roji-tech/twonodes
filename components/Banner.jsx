@@ -1,8 +1,21 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
-// import Navbar from "./Navbar";
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  // CarouselNext,
+  // CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Banner = () => {
+  const plugin = useRef(Autoplay({ delay: 2000, playOnInit: true }));
+
+  const CarouselTexts = ["with ease", "at glance", "efficiently"];
+
   return (
     <div className="mywrapper heroImg bg-cover overflow-hidden">
       <div className="w-full min-h-[602px] py-[70px] bg-black/opacity-60 flex-col justify-center items-center gap-2.5 inline-flex">
@@ -18,11 +31,24 @@ const Banner = () => {
                 </div>
                 <div className="">
                   <div className="text-center text-sky-500 text-[64px] font-extrabold font-['Bricolage Grotesque'] leading-[74px]">
-                    with ease
-                    {/* <br />
-                    at glance
-                    <br />
-                    efficiently */}
+                    <Carousel
+                      plugins={[plugin.current]}
+                      opts={{
+                        align: "start",
+                      }}
+                      orientation="vertical"
+                      className="w-full"
+                    >
+                      <CarouselContent className="-mt-1 h-[100px]">
+                        {CarouselTexts.map((text, index) => (
+                          <CarouselItem key={index} className="basis-full">
+                            {text}
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      {/* <CarouselPrevious />
+                      <CarouselNext /> */}
+                    </Carousel>
                   </div>
                 </div>
               </div>

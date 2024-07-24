@@ -7,8 +7,8 @@ import {
   BelovedClientsSayings,
   FeaturedNews,
   OurGallery,
-  FrequentlyAskedQuestions,
 } from "@/components/HomeComponents";
+import { FrequentlyAskedQuestions } from "@/components/FrequentlyAskedQuestions";
 import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
 import { SurveyTrustFirms } from "@/components/SurveyTrustFirms";
