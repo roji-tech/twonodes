@@ -71,8 +71,7 @@ export const EfficientGISSolutions = () => {
                           {item?.title}
                         </div>
                         <div className="w-[482px] text-neutral-600 text-base font-normal leading-7">
-                          Renders Surveyor's data in a manner that provides easy
-                          access, management and data-driven insight.
+                          {item?.desc}
                         </div>
                       </div>
                     </div>
