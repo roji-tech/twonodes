@@ -1,7 +1,7 @@
 const TakeAViewofOurGallery = () => {
   const Images = [
     "/gal1.png",
-    "/gal2.png",
+    "/signing.jpg",
     "/gal3.png",
     "/gal4.png",
     "/gal5.png",
@@ -30,7 +30,7 @@ const TakeAViewofOurGallery = () => {
       <div className="w-full self-stretch min-h-[1780px] gap-[30px] grid lg:grid-cols-2 grid-cols-1 justify-items-center">
         {Images.map((imgUrl, index) => (
           <div key={index} className="w-full p-3 flex justify-center">
-            <img className="w-full max-w-[570px] max-h-[430px]" src={imgUrl} />
+            <img className="w-full max-w-[570px] max-h-[450px]" src={imgUrl} />
           </div>
         ))}
       </div>
