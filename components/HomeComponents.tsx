@@ -113,7 +113,7 @@ export const Revolutionizing = () => {
 };
 
 export const SignUpforOurSurvey = ({
-  url = "/https://survey123.arcgis.com/share/a0d72b89d7a14eae9da311fdae8fc5c5",
+  url = "https://survey123.arcgis.com/share/a0d72b89d7a14eae9da311fdae8fc5c5",
 }) => {
   return (
     <div className="mywrapper w-full min-h-[374px] pt-[60px] pb-24 bg-white flex-col justify-center items-center gap-2.5 inline-flex">
@@ -131,6 +131,7 @@ export const SignUpforOurSurvey = ({
           </div>
         </div>
         <Link
+          target="_blank"
           href={url}
           className="max-w-[257px] w-full px-5 py-6 grid place-items-center bg-sky-950 rounded-[50px]"
         >
@@ -232,11 +233,14 @@ export const FeaturedNews = () => {
                 beyond your imagination.
               </div>
             </div>
-            <div className="px-5 py-2.5 bg-sky-950 rounded-[5px] justify-center items-center gap-2.5 inline-flex">
+            <Link
+              href={"/featurednews"}
+              className="px-5 py-2.5 bg-sky-950 rounded-[5px] justify-center items-center gap-2.5 inline-flex"
+            >
               <div className="text-white text-lg font-normal leading-7">
                 Read More
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -286,7 +290,10 @@ export const OurGallery = () => {
           </div>
           <div className="w-full md:min-w-[270.54px] flex flex-col justify-start items-start gap-[30px]">
             <div className="w-full h-60 flex flex-col justify-start items-start gap-2.5">
-              <img className="max-w-[270.23px] h-60 rounded-2xl" src="gal4.png" />
+              <img
+                className="max-w-[270.23px] h-60 rounded-2xl"
+                src="gal4.png"
+              />
             </div>
             <div className="w-full flex justify-center md:justify-start items-center gap-2.5">
               <img

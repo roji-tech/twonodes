@@ -16,7 +16,7 @@ const FeaturedNews = () => {
           </div>
         </div>
       </div>
-      <div className="self-stretch h-[1712.43px] flex-col justify-start items-start gap-10 flex">
+      <div className="self-stretch flex-col justify-start items-start gap-10 flex">
         <div className="self-stretch min-h-[536px] flex-col justify-start items-start gap-[35px] flex">
           <div className="self-stretch h-[186px] flex-col justify-start items-start gap-6 flex">
             <div className="self-stretch text-[#0c0e12] text-lg font-medium">
@@ -51,22 +51,12 @@ const FeaturedNews = () => {
             </span>
           </div>
         </div>
-        <img
-          className="self-stretch max-h-[501.43px]"
-          src="https://via.placeholder.com/1168x501"
-        />
-        <div className="w-full justify-between items-center inline-flex">
-          <div className="min-w-[570px] h-[430px] relative">
-            <img
-              className="max-w-[570px] h-[430px] left-0 top-0 absolute"
-              src="https://via.placeholder.com/570x430"
-            />
-          </div>
-          <div className="min-w-[570px] h-[430px] relative">
-            <img
-              className="max-w-[570px] h-[430px] left-0 top-0 absolute"
-              src="https://via.placeholder.com/570x430"
-            />
+        <div className="w-full gap-8 flex flex-col items-center justify-center">
+          <img className="self-center max-h-[501.43px]" src="/fea1.png" />
+          <div className="max-w-full w-full justify-evenly gap-7 items-center flex flex-wrap">
+            <img className="max-w-[570px] max-h-[430px]" src="/fea2.png" />
+
+            <img className="max-w-[570px] max-h-[430px]" src="/fea3.png" />
           </div>
         </div>
         <div className="w-full justify-start items-start gap-[673px] inline-flex">
@@ -74,7 +64,7 @@ const FeaturedNews = () => {
           <div className="justify-start items-center gap-[25px] flex">
             <img
               className="max-w-[61px] h-[61px] rounded-full"
-              src="https://via.placeholder.com/61x61"
+              src="feaAvatar.png"
             />
             <div className="flex-col justify-start items-start gap-[5px] inline-flex">
               <div className="self-stretch text-[#4e5055] text-base font-normal">

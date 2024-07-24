@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const SurfBoard = ({ text = "What You Need To Know", showBtn = true }) => {
   return (
     <section className="mywrapper w-full min-h-[1111px] py-[75px] bg-white flex-col justify-start items-center gap-2.5 inline-flex">
@@ -85,11 +87,14 @@ const SurfBoard = ({ text = "What You Need To Know", showBtn = true }) => {
           </div>
           {showBtn ? (
             <div className="w-full flex-col justify-start items-center gap-5 flex">
-              <div className="max-w-[470px] w-full px-[45px] py-[15px] bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex">
+              <Link
+                href="/signup"
+                className="max-w-[470px] w-full px-[45px] py-[15px] bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+              >
                 <div className="text-center text-white text-lg font-semibold leading-[30px]">
                   Subscribe
                 </div>
-              </div>
+              </Link>
             </div>
           ) : (
             ""
