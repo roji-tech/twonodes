@@ -31,13 +31,24 @@ export const Revolutionizing = () => {
             <div className="flex-col justify-start items-start inline-flex">
               <div className="justify-center items-center inline-flex">
                 <div className="text-sky-500 text-[50px] font-extrabold leading-[54px]">
-                  <CarouselContent className="h-16">
-                    {CarouselTexts.map((text, index) => (
-                      <CarouselItem key={index} className="basis-full">
-                        {text}
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
+                  <Carousel
+                    plugins={[plugin.current]}
+                    opts={{
+                      align: "start",
+                    }}
+                    orientation="vertical"
+                    className="w-full"
+                  >
+                    <CarouselContent className="h-16">
+                      {CarouselTexts.map((text, index) => (
+                        <CarouselItem key={index} className="basis-full">
+                          {text}
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    {/* <CarouselPrevious />
+                      <CarouselNext /> */}
+                  </Carousel>
                 </div>
               </div>
               <div className="self-stretch text-white text-[50px] font-extrabold leading-[54px]">
