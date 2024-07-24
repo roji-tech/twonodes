@@ -12,7 +12,7 @@ import { ServicesRevolutionizing } from "./Revol";
 
 export default function Home() {
   return (
-    <section className="bg-teal-5000">
+    <section className="">
       <Navbar />
       <ServicesRevolutionizing />
 

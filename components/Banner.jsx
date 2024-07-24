@@ -30,7 +30,7 @@ const Banner = () => {
                   The Platform for Industry Based GIS Solutions
                 </div>
                 <div className="">
-                  <div className="text-center text-sky-500 text-[64px] font-extrabold leading-[0px]">
+                  <div className="text-sky-500 text-[64px] font-extrabold leading-[54px]">
                     <Carousel
                       plugins={[plugin.current]}
                       opts={{
@@ -39,7 +39,7 @@ const Banner = () => {
                       orientation="vertical"
                       className="w-full"
                     >
-                      <CarouselContent className="h-16">
+                      <CarouselContent className="h-20">
                         {CarouselTexts.map((text, index) => (
                           <CarouselItem key={index} className="basis-full">
                             {text}
