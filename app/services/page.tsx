@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
       <ServicesRevolutionizing />
 
-      <SurfBoard />
+      <SurfBoard activeLink={false} />
 
       {/* Survey Firms that Trust our Solution */}
       <SurveyTrustFirms />

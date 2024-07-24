@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-const SurfBoard = ({ text = "What You Need To Know", showBtn = true }) => {
+const SurfBoard = ({
+  text = "What You Need To Know",
+  showBtn = true,
+  activeLink = true,
+}) => {
   return (
     <section className="mywrapper w-full min-h-[1111px] py-[75px] bg-white flex-col justify-start items-center gap-2.5 inline-flex">
       <div className="flex-col justify-start items-center gap-[70px] flex">
@@ -33,58 +37,104 @@ const SurfBoard = ({ text = "What You Need To Know", showBtn = true }) => {
               src="/surfboardGlobe.png"
             />
             <div className="min-h-[434px] justify-center items-start gap-[30px] grid grid-cols-1 lg:grid-cols-2">
-              <Link
-                target="_blank"
-                href={"https://survey123.arcgis.com/surveys"}
-                className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex"
-              >
-                <img className="max-w-16 h-16" src="/smartForms.png" />
-                <div className="flex-col justify-start items-center gap-3 flex">
-                  <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
-                    Smart Forms
+              {activeLink ? (
+                <>
+                  <Link
+                    target="_blank"
+                    href={"https://survey123.arcgis.com/surveys"}
+                    className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex"
+                  >
+                    <img className="max-w-16 h-16" src="/smartForms.png" />
+                    <div className="flex-col justify-start items-center gap-3 flex">
+                      <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
+                        Smart Forms
+                      </div>
+                      <div className="max-w-[270px] text-center text-neutral-600 text-sm font-normal leading-normal">
+                        A convenient form for you to upload PDF survey plans,
+                        CAD drawings, and evidence of lodgment for all surveys
+                        you have completed.
+                      </div>
+                    </div>
+                  </Link>
+                  <Link
+                    target="_blank"
+                    href={"https://www.arcgis.com/apps/dashboards/home"}
+                    className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex"
+                  >
+                    <img className="w-16 h-16" src="/dashboard.png" />
+                    <div className="flex-col justify-start items-center gap-3 flex">
+                      <div className="w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
+                        Dashboard
+                      </div>
+                      <div className="max-w-[270px] text-center text-neutral-600 text-sm font-normal leading-normal">
+                        Analyze spatial designs and discover patterns in your
+                        survey records.
+                      </div>
+                    </div>
+                  </Link>
+                  <Link
+                    target="_blank"
+                    href={
+                      "https://www.arcgis.com/apps/instantgallery/index.html?tab=myApps"
+                    }
+                    className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex"
+                  >
+                    <img className="w-16 h-16" src="/recordViewer.png" />
+                    <div className="flex-col justify-start items-center gap-3 flex">
+                      <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
+                        Record Viewer
+                      </div>
+                      <div className="max-w-[270px] text-center text-neutral-600 text-sm font-normal leading-normal">
+                        Query your survey records efficiently by searching with
+                        the plan number, survey plan name, or coordinates to get
+                        specific results.
+                      </div>
+                    </div>
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
+                    <img className="max-w-16 h-16" src="/smartForms.png" />
+                    <div className="flex-col justify-start items-center gap-3 flex">
+                      <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
+                        Smart Forms
+                      </div>
+                      <div className="max-w-[270px] text-center text-neutral-600 text-sm font-normal leading-normal">
+                        A convenient form for you to upload PDF survey plans,
+                        CAD drawings, and evidence of lodgment for all surveys
+                        you have completed.
+                      </div>
+                    </div>
                   </div>
-                  <div className="max-w-[270px] text-center text-neutral-600 text-sm font-normal leading-normal">
-                    A convenient form for you to upload PDF survey plans, CAD
-                    drawings, and evidence of lodgment for all surveys you have
-                    completed.
+                  <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
+                    <img className="w-16 h-16" src="/dashboard.png" />
+                    <div className="flex-col justify-start items-center gap-3 flex">
+                      <div className="w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
+                        Dashboard
+                      </div>
+                      <div className="max-w-[270px] text-center text-neutral-600 text-sm font-normal leading-normal">
+                        Analyze spatial designs and discover patterns in your
+                        survey records.
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </Link>
-              <Link
-                target="_blank"
-                href={"https://www.arcgis.com/apps/dashboards/home"}
-                className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex"
-              >
-                <img className="w-16 h-16" src="/dashboard.png" />
-                <div className="flex-col justify-start items-center gap-3 flex">
-                  <div className="w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
-                    Dashboard
+                  <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
+                    <img className="w-16 h-16" src="/recordViewer.png" />
+                    <div className="flex-col justify-start items-center gap-3 flex">
+                      <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
+                        Record Viewer
+                      </div>
+                      <div className="max-w-[270px] text-center text-neutral-600 text-sm font-normal leading-normal">
+                        Query your survey records efficiently by searching with
+                        the plan number, survey plan name, or coordinates to get
+                        specific results.
+                      </div>
+                    </div>
                   </div>
-                  <div className="max-w-[270px] text-center text-neutral-600 text-sm font-normal leading-normal">
-                    Analyze spatial designs and discover patterns in your survey
-                    records.
-                  </div>
-                </div>
-              </Link>
-              <Link
-                target="_blank"
-                href={
-                  "https://www.arcgis.com/apps/instantgallery/index.html?tab=myApps"
-                }
-                className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex"
-              >
-                <img className="w-16 h-16" src="/recordViewer.png" />
-                <div className="flex-col justify-start items-center gap-3 flex">
-                  <div className="max-w-[270px] text-center text-zinc-950 text-xl font-semibold leading-[30px]">
-                    Record Viewer
-                  </div>
-                  <div className="max-w-[270px] text-center text-neutral-600 text-sm font-normal leading-normal">
-                    Query your survey records efficiently by searching with the
-                    plan number, survey plan name, or coordinates to get
-                    specific results.
-                  </div>
-                </div>
-              </Link>
+                </>
+              )}
+
               <div className="hover:bg-[#00000050] p-3 flex-col justify-start items-center gap-6 inline-flex">
                 <img className="w-16 h-16" src="/fieldsoffice.png" />
                 <div className="flex-col justify-start items-center gap-3 flex">
