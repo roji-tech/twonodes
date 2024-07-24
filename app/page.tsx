@@ -4,7 +4,6 @@ import {
   EfficientGISSolutions,
   SignUpforOurSurvey,
   Revolutionizing,
-  SurveyTrustFirms,
   BelovedClientsSayings,
   FeaturedNews,
   OurGallery,
@@ -12,6 +11,7 @@ import {
 } from "@/components/HomeComponents";
 import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
+import { SurveyTrustFirms } from "@/components/SurveyTrustFirms";
 
 export default function Home() {
   return (

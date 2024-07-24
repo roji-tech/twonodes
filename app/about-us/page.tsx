@@ -1,13 +1,13 @@
 import Navbar from "@/components/Navbar";
 import {
   SignUpforOurSurvey,
-  SurveyTrustFirms,
   BelovedClientsSayings,
   FrequentlyAskedQuestions,
 } from "@/components/HomeComponents";
 import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
 import Aboutbanner from "./Aboutbanner";
+import { SurveyTrustFirms } from "@/components/SurveyTrustFirms";
 
 export default function Home() {
   return (

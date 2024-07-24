@@ -1,18 +1,14 @@
 import Navbar from "@/components/Navbar";
-import Banner from "@/components/Banner";
 import {
-  EfficientGISSolutions,
   SignUpforOurSurvey,
   Revolutionizing,
-  SurveyTrustFirms,
   BelovedClientsSayings,
-  FeaturedNews,
-  OurGallery,
   FrequentlyAskedQuestions,
 } from "@/components/HomeComponents";
 import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
 import SurfBoard from "./SurfBoard";
+import { SurveyTrustFirms } from "@/components/SurveyTrustFirms";
 
 export default function Home() {
   return (

@@ -1,3 +1,4 @@
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
@@ -6,100 +7,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Link from "next/link";
-
-export const SurveyTrustFirms = () => {
-  const surveyData = [
-    {
-      src: "https://via.placeholder.com/204x83",
-      companyName: "FOMS Survey Consult Limited",
-      surveyor: "Surv. Mariam Adebule",
-      imgWidth: 204,
-      imgHeight: 83,
-    },
-    {
-      src: "https://via.placeholder.com/203x84",
-      companyName: "Stenik Consult",
-      surveyor: "Surv. Adenike A. Tejuosho",
-      imgWidth: 203,
-      imgHeight: 84,
-    },
-    {
-      src: "https://via.placeholder.com/203x79",
-      companyName: "Arpenture Consultants Limited",
-      surveyor: "Surv. Adedapo Fashina",
-      imgWidth: 203,
-      imgHeight: 79,
-    },
-    {
-      src: "https://via.placeholder.com/155x80",
-      companyName: "Samday GeoServices",
-      surveyor: "Surv. Adediji Adegoke Samson",
-      imgWidth: 155,
-      imgHeight: 80,
-    },
-    {
-      src: "https://via.placeholder.com/152x80",
-      companyName: "QED Consult",
-      surveyor: "Surv. Sangowawa Olutomi Ajose",
-      imgWidth: 152,
-      imgHeight: 80,
-    },
-    {
-      src: "https://via.placeholder.com/99x80",
-      companyName: "DOT Point",
-      surveyor: "Surv. Taiwo David O.",
-      imgWidth: 99,
-      imgHeight: 80,
-    },
-    {
-      src: "https://via.placeholder.com/99x80",
-      companyName: "Survey Firm",
-      surveyor: "Surv. Paul Osigweh Chigozie",
-      imgWidth: 99,
-      imgHeight: 80,
-    },
-  ];
-
-  return (
-    <div className="overflow-hidden max-w-full">
-      <div className="w-full h-[276px] py-10 items-center  bg-white self-stretch flex-col justify-start gap-[35px] flex">
-        <div className="text-center text-stone-950 text-lg font-semibold">
-          Survey Firms that Trust our Solution
-        </div>
-        <div className="flex w-full justify-center overflow-hidden items-center">
-          <Carousel className="w-[90%]" style={{ width: "95%" }}>
-            <CarouselContent className="flex p-3">
-              {surveyData.map((survey, index) => (
-                <CarouselItem
-                  key={index}
-                  className="p-2 basis-1/2 md:basis-[35%] lg:basis-[20%] 2xl:basis-[14%]"
-                >
-                  <div className="flex-col justify-start items-center gap-2.5 inline-flex">
-                    <img
-                      className={`w-[${survey.imgWidth}px] h-[${survey.imgHeight}px]`}
-                      src={survey.src}
-                      alt={survey.companyName}
-                    />
-                    <div className="flex-col justify-start items-center flex">
-                      <div className="text-center text-stone-950 text-sm font-medium">
-                        {survey.companyName}
-                      </div>
-                      <div className="text-center text-stone-950 text-xs font-normal leading-7">
-                        {survey.surveyor}
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 export const EfficientGISSolutions = () => {
   return (
@@ -163,7 +70,7 @@ export const EfficientGISSolutions = () => {
 
 export const Revolutionizing = () => {
   return (
-    <section className="RevolutionizingBg mywrapper h-max py-16 bg-black lg:bg-red-800">
+    <section className="RevolutionizingBg mywrapper h-max py-16 bg-black">
       <div className="h-full w-full grid grid-cols-1 lg:grid-cols-2">
         <div className="hidden lg:flex"></div>
         <div className="flex flex-col h-full justify-center">
@@ -340,7 +247,7 @@ export const FeaturedNews = () => {
 export const OurGallery = () => {
   return (
     <div className="mywrapper w-full min-h-[1038px] py-[68px] bg-white flex-col justify-start items-start gap-2.5 inline-flex">
-      <div className="self-stretch min-h-[902px] flex-col justify-start items-center gap-10 flex">
+      <div className="w-full self-stretch min-h-[902px] flex-col justify-start items-center gap-10 flex">
         <div className="flex-col justify-start items-center gap-5 flex">
           <div className="flex-col justify-start items-center gap-[15px] flex">
             <div className="justify-start items-center gap-[15px] inline-flex">
@@ -356,7 +263,7 @@ export const OurGallery = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap justify-around items-center gap-[33px]">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center  items-center gap-[20px]">
           <div className="flex justify-center md:justify-start items-center gap-2.5">
             <img
               className="w-[270.23px] h-[652px] rounded-2xl"
@@ -371,12 +278,15 @@ export const OurGallery = () => {
               />
             </div>
             <div className="w-full min-h-60 flex flex-col justify-start items-start gap-2.5">
-              <img className="max-w-full max-h-60 rounded-2xl" src="gal3.png" />
+              <img
+                className="max-w-[auto] max-h-60 rounded-2xl"
+                src="gal3.png"
+              />
             </div>
           </div>
           <div className="w-full md:min-w-[270.54px] flex flex-col justify-start items-start gap-[30px]">
             <div className="w-full h-60 flex flex-col justify-start items-start gap-2.5">
-              <img className="w-full h-60 rounded-2xl" src="gal4.png" />
+              <img className="max-w-[270.23px] h-60 rounded-2xl" src="gal4.png" />
             </div>
             <div className="w-full flex justify-center md:justify-start items-center gap-2.5">
               <img
