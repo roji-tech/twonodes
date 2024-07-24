@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Banner from "@/components/Banner";
 import {
-  EfficientGISSolutions,
   SignUpforOurSurvey,
   Revolutionizing,
   BelovedClientsSayings,
@@ -12,6 +11,7 @@ import { FrequentlyAskedQuestions } from "@/components/FrequentlyAskedQuestions"
 import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
 import { SurveyTrustFirms } from "@/components/SurveyTrustFirms";
+import { EfficientGISSolutions } from "@/components/EfficientGISSolutions";
 
 export default function Home() {
   return (
