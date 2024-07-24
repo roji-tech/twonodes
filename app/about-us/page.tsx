@@ -19,7 +19,7 @@ export default function Home() {
       <SurveyTrustFirms />
 
       {/* Sign Up for Our Survey Data Management */}
-      <SignUpforOurSurvey />
+      <SignUpforOurSurvey url="signup" />
 
       {/* What Our Beloved Clients Are Saying */}
       <BelovedClientsSayings />

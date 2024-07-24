@@ -61,7 +61,8 @@ const Banner = () => {
 
             <Link
               href={"/services"}
-              className="w-[min(100%, 470px)] px-[45px] py-[15px] bg-gray-900 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+              className="w-full max-w-[470px] px-[45px] py-[15px] bg-gray-900 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+              style={{ background: "#091E24" }}
             >
               <div className="text-center text-white text-lg font-semibold leading-[30px]">
                 Get Started

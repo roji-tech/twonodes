@@ -182,7 +182,18 @@ const Footer = () => {
           <div className="justify-start items-start gap-14 flex flex-wrap">
             <div className="justify-center items-center gap-3 flex">
               <div className="w-10 h-10 bg-sky-950 rounded-[25px] flex-col justify-center items-center inline-flex">
-                <div className="w-5 h-5 relative" />
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.139 12.1751C14.5792 12.0547 14.1364 12.3146 13.7443 12.5416C13.3428 12.7755 12.5792 13.3949 12.1416 13.2363C9.90086 12.3137 7.7934 10.3525 6.88112 8.10278C6.72033 7.65578 7.33683 6.88739 7.56898 6.48111C7.79426 6.08782 8.04877 5.64082 7.9327 5.07688C7.8278 4.57011 6.47097 2.84362 5.99119 2.3715C5.67477 2.05964 5.35061 1.88812 5.01785 1.8604C3.76679 1.80669 2.36956 3.476 2.1245 3.87535C1.51058 4.7269 1.51402 5.85999 2.13482 7.2339C3.63094 10.9242 9.28952 16.4935 12.9937 18.0459C13.6773 18.3655 14.3024 18.5258 14.8638 18.5258C15.4133 18.5258 15.9025 18.3725 16.323 18.0684C16.6403 17.8856 18.378 16.419 18.3324 15.1343C18.3049 14.8069 18.1338 14.4794 17.826 14.1624C17.3574 13.6781 15.642 12.2808 15.139 12.1751Z"
+                    fill="white"
+                  />
+                </svg>
               </div>
               <div className="flex-col justify-start items-start inline-flex">
                 <div className="text-stone-950 text-sm font-normal leading-normal">
@@ -195,12 +206,21 @@ const Footer = () => {
             </div>
             <div className="justify-center items-center gap-3 flex">
               <div className="w-10 h-10 bg-sky-950 rounded-[25px] flex-col justify-center items-center inline-flex">
-                <div className="w-5 h-5 relative">
-                  <img
-                    className="w-[16.67px] h-[15px] left-[1.67px] top-[2.19px] absolute"
-                    src="https://via.placeholder.com/17x15"
+                <svg
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect y="0.5" width="40" height="40" rx="20" fill="#001F3F" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24.1158 12.6914C25.2333 12.6914 26.3083 13.1331 27.0991 13.9256C27.8908 14.7164 28.3333 15.7831 28.3333 16.8997V23.4831C28.3333 25.8081 26.4416 27.6914 24.1158 27.6914H15.8833C13.5575 27.6914 11.6666 25.8081 11.6666 23.4831V16.8997C11.6666 14.5747 13.5491 12.6914 15.8833 12.6914H24.1158ZM25.4416 18.1417L25.5083 18.075C25.7075 17.8333 25.7075 17.4833 25.4991 17.2417C25.3833 17.1175 25.2241 17.0417 25.0583 17.025C24.8833 17.0158 24.7166 17.075 24.5908 17.1917L20.8333 20.1917C20.35 20.5925 19.6575 20.5925 19.1666 20.1917L15.4166 17.1917C15.1575 17 14.7991 17.025 14.5833 17.25C14.3583 17.475 14.3333 17.8333 14.5241 18.0833L14.6333 18.1917L18.425 21.15C18.8916 21.5167 19.4575 21.7167 20.05 21.7167C20.6408 21.7167 21.2166 21.5167 21.6825 21.15L25.4416 18.1417Z"
+                    fill="white"
                   />
-                </div>
+                </svg>
               </div>
               <div className="flex-col justify-start items-start inline-flex">
                 <div className="text-stone-950 text-sm font-normal leading-normal">

@@ -1,7 +1,5 @@
 import Navbar from "@/components/Navbar";
-import { SignUpforOurSurvey } from "@/components/HomeComponents";
 import Footer from "@/components/Footer";
-import SurfBoard from "../services/SurfBoard";
 import FeaturedNews from "./FeaturedNews";
 
 export default function Home() {

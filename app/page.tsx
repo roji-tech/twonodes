@@ -29,7 +29,7 @@ export default function Home() {
       <Revolutionizing />
 
       {/* Sign Up for Our Survey Data Management */}
-      <SignUpforOurSurvey />
+      <SignUpforOurSurvey url="signup" />
 
       {/* What Our Beloved Clients Are Saying */}
       <BelovedClientsSayings />
