@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 
-import { SidebarMobile } from "./sidebar-mobile";
+import { SidebarMobile } from "./navbar-mobile";
 import { navbarItems } from "./navbarItems";
 import { usePathname } from "next/navigation";
 

@@ -18,7 +18,7 @@ const FeaturedNews = () => {
       </div>
       <div className="self-stretch flex-col justify-start items-start gap-10 flex">
         <div className="self-stretch min-h-[536px] flex-col justify-start items-start gap-[35px] flex">
-          <div className="self-stretch h-[186px] flex-col justify-start items-start gap-6 flex">
+          <div className="self-stretch min-h-[186px] flex-col justify-start items-start gap-6 flex">
             <div className="self-stretch text-[#0c0e12] text-lg font-medium">
               Wednesday, July 17, 2024 · 2 Min Read
             </div>
@@ -63,7 +63,7 @@ const FeaturedNews = () => {
         <div className="w-full justify-between items-center flex">
           <div className="justify-start items-center gap-[25px] flex">
             <img
-              className="max-w-[61px] h-[61px] rounded-full"
+              className="w-[61px] h-[61px] rounded-full"
               src="feaAvatar.png"
             />
             <div className="flex-col justify-start items-start gap-[5px] inline-flex">

@@ -9,7 +9,7 @@ import {
   SheetTrigger,
 } from "../ui/sheet";
 import { Button } from "../ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Newspaper } from "lucide-react";
 import Link from "next/link";
 import { SidebarButtonSheet as SidebarButton } from "./sidebar-button";
 import { usePathname } from "next/navigation";
@@ -20,6 +20,12 @@ interface SidebarMobileProps {
 
 export function SidebarMobile(props: SidebarMobileProps) {
   const pathname = usePathname();
+
+  const featurednewspage = {
+    label: "Featured News",
+    href: "/featurednews",
+    icon: Newspaper,
+  };
 
   return (
     <Sheet>
@@ -71,6 +77,33 @@ export function SidebarMobile(props: SidebarMobileProps) {
                     </Link>
                   );
                 })}
+                <Link
+                  href={featurednewspage.href}
+                  className="group rounded-xl w-full p-0 items-center flex cursor-pointer hover:bg-gray-600"
+                >
+                  <SidebarButton
+                    variant="link"
+                    // variant={pathname === item.href ? "secondary" : "ghost"}
+                    icon={featurednewspage.icon}
+                    className={`group-hover:translate-x-1 py-9 duration-200 w-full flex items-center font-['Bricolage Grotesque'] leading-7 ${
+                      pathname === featurednewspage.href
+                        ? "font-extrabold"
+                        : "font-normal"
+                    }`}
+                  >
+                    <span className="text-white text-xl">
+                      {featurednewspage.label}
+                    </span>
+                  </SidebarButton>
+                </Link>
+                <Link
+                  href={"/login"}
+                  className="cursor-pointer w-[143px] h-11 px-5 py-2 bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+                >
+                  <div className="text-center text-white text-base font-semibold font-['Bricolage Grotesque'] leading-7">
+                    Login
+                  </div>
+                </Link>
               </div>
             </div>
 
