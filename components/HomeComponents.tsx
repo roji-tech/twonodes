@@ -113,7 +113,7 @@ export const Revolutionizing = () => {
 };
 
 export const SignUpforOurSurvey = ({
-  url = "https://survey123.arcgis.com/share/a0d72b89d7a14eae9da311fdae8fc5c5",
+  url = "/login",
 }) => {
   return (
     <div className="mywrapper w-full min-h-[374px] pt-[60px] pb-24 bg-white flex-col justify-center items-center gap-2.5 inline-flex">

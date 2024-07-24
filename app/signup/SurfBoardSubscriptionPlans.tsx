@@ -28,7 +28,7 @@ const SurfBoardSubscriptionPlans = () => {
             <div className="min-h-[387.26px] flex-col justify-center items-center gap-[40.84px] flex">
               <img
                 className="max-w-[203.84px] max-h-[203.84px]"
-                src="https://via.placeholder.com/204x204"
+                src="basic.png"
               />
               <div className="flex-col justify-start items-center gap-[14.29px] flex">
                 <div className="text-center text-zinc-950 text-[28px] font-bold font-['Bricolage Grotesque'] leading-9">
@@ -47,7 +47,7 @@ const SurfBoardSubscriptionPlans = () => {
             <div className="min-h-[396.36px] flex-col justify-center items-center gap-[40.84px] flex">
               <img
                 className="max-w-[203.84px] max-h-[212.94px]"
-                src="https://via.placeholder.com/204x213"
+                src="med.png"
               />
               <div className="flex-col justify-start items-center gap-[14.29px] flex">
                 <div className="text-center text-zinc-950 text-[28px] font-bold font-['Bricolage Grotesque'] leading-9">
@@ -67,7 +67,7 @@ const SurfBoardSubscriptionPlans = () => {
             <div className="min-h-[387.26px] flex-col justify-center items-center gap-[40.84px] flex">
               <img
                 className="max-w-[203.84px] max-h-[203.84px]"
-                src="https://via.placeholder.com/204x204"
+                src="adv.png"
               />
               <div className="flex-col justify-start items-center gap-[14.29px] flex">
                 <div className="text-center text-zinc-950 text-[28px] font-bold font-['Bricolage Grotesque'] leading-9">
