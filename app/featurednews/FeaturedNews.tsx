@@ -59,8 +59,8 @@ const FeaturedNews = () => {
             <img className="max-w-[570px] max-h-[430px]" src="/fea3.png" />
           </div>
         </div>
-        <div className="w-full justify-between items-start flex">
-          <div className="w-full h-[0px] opacity-50 border border-[#4e5055]"></div>
+        <div className="w-full h-[0px] opacity-50 border border-[#4e5055]"></div>
+        <div className="w-full justify-between items-center flex">
           <div className="justify-start items-center gap-[25px] flex">
             <img
               className="max-w-[61px] h-[61px] rounded-full"
@@ -76,7 +76,7 @@ const FeaturedNews = () => {
             </div>
           </div>
 
-          <div className="justify-end items-start gap-3 flex">
+          <div className="justify-end items-center gap-3 flex">
             <svg
               width="36"
               height="37"
