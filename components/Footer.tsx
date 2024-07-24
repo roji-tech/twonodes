@@ -149,15 +149,24 @@ const Footer = () => {
                   Company
                 </div>
                 <div className="flex-col justify-start items-start gap-5 flex">
-                  <div className="text-stone-950 text-base font-normal leading-normal">
+                  <Link
+                    href={"/"}
+                    className="text-stone-950 text-base font-normal leading-normal"
+                  >
                     Home
-                  </div>
-                  <div className="text-stone-950 text-base font-normal leading-normal">
+                  </Link>
+                  <Link
+                    href={"about-us"}
+                    className="text-stone-950 text-base font-normal leading-normal"
+                  >
                     About Us
-                  </div>
-                  <div className="text-stone-950 text-base font-normal leading-normal">
+                  </Link>
+                  <Link
+                    href={"services"}
+                    className="text-stone-950 text-base font-normal leading-normal"
+                  >
                     Our Services
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="flex-col justify-center items-start gap-6 inline-flex">
@@ -165,15 +174,24 @@ const Footer = () => {
                   Links
                 </div>
                 <div className="flex-col justify-start items-start gap-5 flex">
-                  <div className="text-stone-950 text-base font-normal leading-normal">
+                  <Link
+                    href={"contact"}
+                    className="text-stone-950 text-base font-normal leading-normal"
+                  >
                     Contact Us
-                  </div>
-                  <div className="text-stone-950 text-base font-normal leading-normal">
+                  </Link>
+                  <Link
+                    href={"gallery"}
+                    className="text-stone-950 text-base font-normal leading-normal"
+                  >
                     Gallery
-                  </div>
-                  <div className="text-stone-950 text-base font-normal leading-normal">
+                  </Link>
+                  <Link
+                    href={"featurednews"}
+                    className="text-stone-950 text-base font-normal leading-normal"
+                  >
                     News
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="flex-col justify-center items-start gap-6 inline-flex">
@@ -181,12 +199,18 @@ const Footer = () => {
                   Resource
                 </div>
                 <div className="flex-col justify-start items-start gap-5 flex">
-                  <div className="text-stone-950 text-base font-normal leading-normal">
+                  <Link
+                    href={"login"}
+                    className="text-stone-950 text-base font-normal leading-normal"
+                  >
                     Login
-                  </div>
-                  <div className="text-stone-950 text-base font-normal leading-normal">
+                  </Link>
+                  <Link
+                    href={"signup"}
+                    className="text-stone-950 text-base font-normal leading-normal"
+                  >
                     Sign Up
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -215,7 +239,7 @@ const Footer = () => {
                   Have a question?
                 </div>
                 <div className="text-stone-950 text-sm font-semibold leading-7">
-                  +234-706-9227-677
+                  <a href="tel:+2347069227677">+234-706-9227-677</a>
                 </div>
               </div>
             </div>
@@ -242,7 +266,9 @@ const Footer = () => {
                   Email us at:
                 </div>
                 <div className="text-stone-950 text-sm font-semibold leading-7">
-                  info@twonodetechnologies.com
+                  <a href="mailto:info@twonodetechnologies.com">
+                    info@twonodetechnologies.com
+                  </a>
                 </div>
               </div>
             </div>
