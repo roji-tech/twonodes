@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 
-
 export const SignUpforOurSurvey = ({ url = "/login" }) => {
   return (
     <div className="mywrapper w-full min-h-[374px] pt-[60px] pb-24 bg-white flex-col justify-center items-center gap-2.5 inline-flex">
@@ -105,12 +104,12 @@ export const FeaturedNews = () => {
   return (
     <div className="mywrapper w-full min-h-[623px] px-[135px] py-[70px] bg-gray-50 flex-col justify-start items-start gap-2.5 inline-flex">
       <div className="self-stretch min-h-[483px] flex-col justify-start items-start gap-[50px] flex">
-        <div className="self-stretch text-neutral-900 text-4xl md:text-5xl font-semibold capitalize">
+        <div className="self-stretch text-neutral-900 text-5xl font-semibold capitalize">
           Featured News
         </div>
         <div className="grid justify-items-center lg:grid-cols-2 gap-10">
           <img
-            className="max-w-[565px] w-full max-h-[375px] rounded-[10px]"
+            className="max-w-[565px] w-fulnl max-h-[390px] rounded-[10px]"
             src="gal8.png"
           />
           <div className="self-stretch flex-col justify-start items-start gap-[45px] inline-flex">
@@ -142,4 +141,3 @@ export const FeaturedNews = () => {
     </div>
   );
 };
-
