@@ -100,7 +100,7 @@ export const BelovedClientsSayings = () => {
   ];
 
   return (
-    <div className="mywrapper bg-black w-full py-16 min-h-[592px] flex-col justify-start items-center gap-[70px] inline-flex">
+    <div className="mywrapper belovedClientBg bg-black w-full py-16 min-h-[592px] flex-col justify-start items-center gap-[70px] inline-flex">
       <div className="text-center text-white text-[50px] font-extrabold leading-[54px]">
         What Our Beloved Clients Are Saying
       </div>
@@ -154,7 +154,7 @@ export const FeaturedNews = () => {
         <div className="grid justify-items-center lg:grid-cols-2 gap-10">
           <img
             className="max-w-[565px] w-full max-h-[375px] rounded-[10px]"
-            src="FeaturedNews.png"
+            src="gal8.png"
           />
           <div className="self-stretch flex-col justify-start items-start gap-[45px] inline-flex">
             <div className="self-stretch h-[260px] flex-col justify-start items-start gap-[30px] flex">
@@ -186,95 +186,3 @@ export const FeaturedNews = () => {
   );
 };
 
-export const OurGallery = () => {
-  return (
-    <div className="mywrapper w-full min-h-[1038px] py-[68px] bg-white flex-col justify-start items-start gap-2.5 inline-flex">
-      <div className="w-full self-stretch min-h-[902px] flex-col justify-start items-center gap-10 flex">
-        <div className="flex-col justify-start items-center gap-5 flex">
-          <div className="flex-col justify-start items-center gap-[15px] flex">
-            <div className="justify-start items-center gap-[15px] inline-flex">
-              <div className="w-5 h-[0px] border-2 border-sky-950"></div>
-              <div className="text-sky-950 text-xl font-medium leading-[34px]">
-                Our Gallery
-              </div>
-            </div>
-            <div className="flex-col justify-start items-start gap-[18px] flex">
-              <div className="text-center text-zinc-950 text-[32px] font-extrabold leading-[54px]">
-                Take A View of Our Gallery
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center  items-center gap-[20px]">
-          {/* <div className="flex justify-center md:justify-start items-center gap-2.5">
-            <img
-              className="w-[270.23px] h-[652px] rounded-2xl"
-              src="gal1.png"
-            />
-          </div>
-          <div className="w-full md:w-[270.54px] flex flex-col justify-start items-start gap-[30px]">
-            <div className="w-full flex justify-center md:justify-start items-center gap-2.5">
-              <img
-                className="max-w-[270.23px] max-h-[382px] rounded-2xl"
-                src="gal2.png"
-              />
-            </div>
-            <div className="w-full min-h-60 flex flex-col justify-start items-start gap-2.5">
-              <img
-                className="max-w-[auto] max-h-60 rounded-2xl"
-                src="gal3.png"
-              />
-            </div>
-          </div>
-          <div className="w-full md:min-w-[270.54px] flex flex-col justify-start items-start gap-[30px]">
-            <div className="w-full h-60 flex flex-col justify-start items-start gap-2.5">
-              <img
-                className="max-w-[270.23px] h-60 rounded-2xl"
-                src="gal4.png"
-              />
-            </div>
-            <div className="w-full flex justify-center md:justify-start items-center gap-2.5">
-              <img
-                className="max-w-[270.23px] max-h-[382px] rounded-2xl"
-                src="gal5.png"
-              />
-            </div>
-          </div>
-          <div className="flex justify-center md:justify-start items-center gap-2.5">
-            <img
-              className="max-w-[270.23px] min-h-[652px] rounded-2xl"
-              src="gal6.png"
-            />
-          </div> */}
-          <img
-            className="w-full max-w-[270.229px] max-h-[652px]"
-            src="/homegal1.png"
-            alt=""
-          />
-          <img
-            className="w-full max-w-[270.229px] max-h-[652px]"
-            src="/homegal2.png"
-            alt=""
-          />
-          <img
-            className="w-full max-w-[270.229px] max-h-[652px]"
-            src="/homegal3.png"
-            alt=""
-          />
-          <img
-            className="w-full max-w-[270.229px] max-h-[652px]"
-            src="/homegal4.png"
-            alt=""
-          />
-        </div>
-
-        <Link
-          href={"/gallery"}
-          className="w-[257px] h-[67px] px-5 py-6 bg-sky-950 rounded-[50px] justify-center items-center gap-2.5 inline-flex"
-        >
-          <div className="text-white text-lg font-semibold">Load More</div>
-        </Link>
-      </div>
-    </div>
-  );
-};

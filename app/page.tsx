@@ -5,13 +5,13 @@ import {
   Revolutionizing,
   BelovedClientsSayings,
   FeaturedNews,
-  OurGallery,
 } from "@/components/HomeComponents";
 import { FrequentlyAskedQuestions } from "@/components/FrequentlyAskedQuestions";
 import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
 import { SurveyTrustFirms } from "@/components/SurveyTrustFirms";
 import { EfficientGISSolutions } from "@/components/EfficientGISSolutions";
+import { OurGallery } from "@/components/OurGallery";
 
 export default function Home() {
   return (

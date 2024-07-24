@@ -13,7 +13,8 @@
   font-style: normal;
   /* font-variation-settings: "wdth" 100; */
 
-  --shadow: 0px 33.50785446166992px 67.01570892333984px 0px rgba(162, 169, 192, 0.15);
+  --shadow: 0px 33.50785446166992px 67.01570892333984px 0px
+    rgba(162, 169, 192, 0.15);
 }
 
 html,
@@ -65,4 +66,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .RevolutionizingBg {
   background: url(/RevolutionizingBg.png);
+}
+
+.belovedClientBg {
+  background: url(/belovedclientBg.png) lightgray 50% / cover no-repeat;
 }

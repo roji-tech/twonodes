@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import { SignUpforOurSurvey } from "@/components/HomeComponents";
 import Footer from "@/components/Footer";
 import EffortlessTracking from "../../components/EffortlessTracking";
-import TakeAViewofOurGallery from "./TakeAViewofOurGallery";
+import TakeAViewofOurGallery from "../../components/TakeAViewofOurGallery";
 
 export default function Home() {
   return (
