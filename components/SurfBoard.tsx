@@ -78,8 +78,7 @@ const SurfBoard = ({ text = "What You Need To Know", showBtn = true }) => {
                     Field - Office Module
                   </div>
                   <div className="max-w-[270px] text-center text-neutral-600 text-sm font-normal leading-normal">
-                    Better workforce coordination between associates in the
-                    field and in the office.
+                    Coming Soon.
                   </div>
                 </div>
               </div>
