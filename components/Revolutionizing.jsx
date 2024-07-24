@@ -1,4 +1,19 @@
-export const ServicesRevolutionizing = () => {
+import Link from "next/link";
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  // CarouselNext,
+  // CarouselPrevious,
+} from "@/components/ui/carousel";
+
+export const Revolutionizing = () => {
+  const plugin = useRef(Autoplay({ delay: 2000, playOnInit: true }));
+
+  const CarouselTexts = ["Revolutionizing", "Revamping", "Transforming"];
+
   return (
     <section className="RevolutionizingBg mywrapper h-max py-16 bg-black">
       <div className="h-full w-full grid grid-cols-1 lg:grid-cols-2">
@@ -14,7 +29,13 @@ export const ServicesRevolutionizing = () => {
             <div className="flex-col justify-start items-start inline-flex">
               <div className="justify-center items-center inline-flex">
                 <div className="text-sky-500 text-[50px] font-extrabold leading-[54px]">
-                  Revolutionizing
+                  <CarouselContent className="h-16">
+                    {CarouselTexts.map((text, index) => (
+                      <CarouselItem key={index} className="basis-full">
+                        {text}
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
                 </div>
               </div>
               <div className="self-stretch text-white text-[50px] font-extrabold leading-[54px]">
@@ -25,15 +46,17 @@ export const ServicesRevolutionizing = () => {
             </div>
           </div>
           <div className="pb-10 text-white text-lg font-normal leading-[30px]">
-            Imagine a seamless transition from raw survey data to insight. Our
-            cutting-edge GIS solution is the bridge between complexity and
-            simplicity, making representation and retrieval of extensive survey
-            information effortless.
+            Discover the art of seamless data management and visualization,
+            tailored for your needs. Unleash the power of geospatial
+            intelligence with ease.
           </div>
-          <div className="pb-10 text-white text-lg font-normal leading-[30px]">
-            Experience the future of Survey Plan management, where efficiency
-            meets innovation seamlessly.
-          </div>
+
+          <Link
+            href="#"
+            className="bg-white max-w-[470px] grid place-items-center w-full h-[60px] gap-[10px] rounded-[30px] text-[18px] font-semibold leading-[30px] text-center"
+          >
+            Learn More
+          </Link>
         </div>
       </div>
     </section>

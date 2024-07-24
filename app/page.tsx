@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Banner from "@/components/Banner";
 import {
   SignUpforOurSurvey,
-  Revolutionizing,
   BelovedClientsSayings,
   FeaturedNews,
 } from "@/components/HomeComponents";
@@ -12,6 +11,7 @@ import Footer from "@/components/Footer";
 import { SurveyTrustFirms } from "@/components/SurveyTrustFirms";
 import { EfficientGISSolutions } from "@/components/EfficientGISSolutions";
 import { OurGallery } from "@/components/OurGallery";
+import { Revolutionizing } from "@/components/Revolutionizing";
 
 export default function Home() {
   return (

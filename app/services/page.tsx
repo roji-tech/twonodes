@@ -8,13 +8,13 @@ import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
 import SurfBoard from "../../components/SurfBoard";
 import { SurveyTrustFirms } from "@/components/SurveyTrustFirms";
-import { Revolutionizing } from "./Revol";
+import { ServicesRevolutionizing } from "./Revol";
 
 export default function Home() {
   return (
     <section className="bg-teal-5000">
       <Navbar />
-      <Revolutionizing />
+      <ServicesRevolutionizing />
 
       <SurfBoard />
 
