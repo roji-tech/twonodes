@@ -49,7 +49,8 @@ export const FrequentlyAskedQuestions = () => {
             </AccordionTrigger>
             <AccordionContent>
               <p className="pl-[5%]">
-                Yes. It adheres to the WAI-ARIA design pattern.
+                TwoNodes Technologies is a revolutionary GIS solution company
+                providing that local industry solution that you need
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -67,7 +68,9 @@ export const FrequentlyAskedQuestions = () => {
             </AccordionTrigger>
             <AccordionContent>
               <p className="pl-[5%]">
-                Yes. It adheres to the WAI-ARIA design pattern.
+                At the moment, most of our solutions are products of ESRI, the
+                global market leader in geographic information system (GIS)
+                software and location intelligence.
               </p>
             </AccordionContent>
           </AccordionItem>
