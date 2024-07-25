@@ -8,14 +8,14 @@ const Aboutbanner = () => {
           <div className="flex-col justify-start items-start gap-5 flex">
             <div className="justify-start items-center gap-[15px] inline-flex">
               <div className="w-5 h-[0px] border-2 border-sky-950"></div>
-              <div className="text-zinc-950 text-xl font-medium font-['Bricolage Grotesque'] leading-[34px]">
+              <div className="text-zinc-950 text-xl font-medium leading-[34px]">
                 About Us
               </div>
             </div>
-            <div className="max-w-[670px] text-zinc-950 text-[70px] font-extrabold font-['Bricolage Grotesque'] leading-[74px]">
+            <div className="max-w-[670px] text-zinc-950 text-[70px] font-extrabold leading-[74px]">
               A Revolutionary GIS Solution
             </div>
-            <div className="max-w-[570px] text-neutral-600 text-lg font-normal font-['Bricolage Grotesque'] leading-[30px]">
+            <div className="max-w-[570px] text-neutral-600 text-lg font-normal leading-[30px]">
               Revamping the way survey information is managed and retrieved.
               Discover a new level of efficiency and accuracy with our
               cutting-edge technology.
