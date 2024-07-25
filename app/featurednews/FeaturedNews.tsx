@@ -55,15 +55,15 @@ const FeaturedNews = () => {
           </div>
         </div>
         <div className="w-full gap-8 flex flex-col items-center justify-center">
-          <img className="self-center max-h-[501.43px]" src="/fea1.png" />
+          <img className="max-w-full self-center max-h-[501.43px]" src="/fea1.png" />
           <div className="max-w-full w-full justify-evenly gap-7 items-center flex flex-wrap">
-            <img className="max-w-[570px] max-h-[430px]" src="/fea2.png" />
+            <img className="w-full max-w-[570px] max-h-[430px]" src="/fea2.png" />
 
-            <img className="max-w-[570px] max-h-[430px]" src="/fea3.png" />
+            <img className="w-full max-w-[570px] max-h-[430px]" src="/fea3.png" />
           </div>
         </div>
         <div className="w-full h-[0px] opacity-50 border border-[#4e5055]"></div>
-        <div className="w-full justify-between items-center flex">
+        <div className="w-full md:justify-between items-center flex flex-wrap gap-3">
           <div className="justify-start items-center gap-[25px] flex">
             <img
               className="w-[61px] h-[61px] rounded-full"
