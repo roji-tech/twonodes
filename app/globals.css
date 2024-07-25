@@ -15,11 +15,18 @@
 
   --shadow: 0px 33.50785446166992px 67.01570892333984px 0px
     rgba(162, 169, 192, 0.15);
+
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html,
 body {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 /* Track */
@@ -70,4 +77,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 .belovedClientBg {
   background: url(/belovedclientBg.png) lightgray 50% / cover no-repeat;
+}
+
+.debuger {
+  outline: 5px solid red;
+  outline-offset: -3px;
+}
+
+.debuger > * {
+  outline: 8px solid yellow;
+  outline-offset: -6px;
 }

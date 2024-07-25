@@ -14,7 +14,7 @@ const SurfBoardSubscriptionPlans = () => {
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-[18px] flex">
-              <div className="text-center text-zinc-950 text-[50px] font-extrabold font-['Bricolage Grotesque'] leading-[54px]">
+              <div className="text-center text-zinc-950 text-[40px] lg:text-[50px] font-extrabold font-['Bricolage Grotesque'] leading-[54px]">
                 SurfBoard Subscription Plans
               </div>
             </div>

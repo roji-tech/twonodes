@@ -15,7 +15,7 @@ import { Revolutionizing } from "@/components/Revolutionizing";
 
 export default function Home() {
   return (
-    <section className="bg-teal-5000">
+    <section className="">
       <Navbar />
       <Banner />
 

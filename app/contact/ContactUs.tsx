@@ -6,7 +6,7 @@ export const ContactUs = () => {
       <div className="self-stretch h-[142px] flex-col justify-center items-center gap-[45px] flex">
         <div className="w-full justify-between items-center inline-flex">
           <div className="w-full flex-col justify-start items-center gap-[18px] inline-flex">
-            <div className="max-w-[706px] text-center text-zinc-950 text-[50px] font-extrabold leading-[64px]">
+            <div className="max-w-[706px] text-center text-zinc-950 text-[40px] lg:text-[50px] font-extrabold leading-[64px]">
               Contact Us
             </div>
             <div className="max-w-[982px] text-center text-neutral-600 text-base font-normal leading-[30px]">

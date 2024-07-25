@@ -21,7 +21,7 @@ const TakeAViewofOurGallery = () => {
             </div>
           </div>
           <div className="flex-col justify-start items-start gap-[18px] flex">
-            <div className="text-center text-[#0c0e12] text-[32px] font-extrabold font-['Bricolage Grotesque'] leading-[54px]">
+            <div className="text-center text-[#0c0e12] text-[28px] lg:text-[32px] font-extrabold font-['Bricolage Grotesque'] leading-[54px]">
               Take A View of Our Gallery
             </div>
           </div>

@@ -54,7 +54,7 @@ export const EfficientGISSolutions = () => {
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-[18px]">
-              <div className="w-[331px] text-sky-950 text-[50px] font-extrabold leading-[54px]">
+              <div className="w-[331px] text-sky-950 text-[40px] lg:text-[50px] font-extrabold leading-[54px]">
                 Efficient GIS Solutions
               </div>
             </div>
@@ -78,7 +78,7 @@ export const EfficientGISSolutions = () => {
           <div className="flex flex-col justify-start items-start gap-5">
             <Link
               href={"/services"}
-              className="w-[470px] px-[45px] py-[15px] bg-sky-950 rounded-[30px] flex justify-center items-center gap-2.5"
+              className="w-full max-w-[470px] px-[45px] py-[15px] bg-sky-950 rounded-[30px] flex justify-center items-center gap-2.5"
             >
               <div className="text-center text-white text-lg font-semibold leading-[30px]">
                 Get Started Today

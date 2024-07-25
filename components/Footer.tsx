@@ -29,7 +29,7 @@ const Footer = () => {
                   {Logo}
                 </span>
                 <div className="flex flex-col justify-between h-full">
-                  <span className="text-sky-950 text-[32px] font-bold">
+                  <span className="text-sky-950 text-[28px] lg:text-[32px] font-bold">
                     TwoNode
                   </span>
                   <span className="text-sky-950 text-2xl font-bold">

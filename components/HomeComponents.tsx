@@ -11,7 +11,7 @@ import Link from "next/link";
 export const SignUpforOurSurvey = ({ url = "/login" }) => {
   return (
     <div className="mywrapper w-full min-h-[374px] pt-[60px] pb-24 bg-white flex-col justify-center items-center gap-2.5 inline-flex">
-      <div className="self-stretch h-[254px] flex-col justify-start items-center gap-[45px] flex">
+      <div className="self-stretch min-h-[254px] flex-col justify-start items-center gap-[45px] flex">
         <div className="w-full justify-between items-center inline-flex">
           <div className="w-full flex-col justify-start items-center gap-[18px] inline-flex">
             <div className="text-center text-sky-950 text-[50px] font-extrabold leading-[64px]">
@@ -109,11 +109,11 @@ export const FeaturedNews = () => {
         </div>
         <div className="grid justify-items-center lg:grid-cols-2 gap-10">
           <img
-            className="max-w-[565px] w-fulnl max-h-[390px] rounded-[10px]"
+            className="max-w-[565px] w-full max-h-[390px] rounded-[10px]"
             src="gal8.png"
           />
           <div className="self-stretch flex-col justify-start items-start gap-[45px] inline-flex">
-            <div className="self-stretch h-[260px] flex-col justify-start items-start gap-[30px] flex">
+            <div className="self-stretch min-h-[260px] flex-col justify-start items-start gap-[30px] flex">
               <div className="self-stretch text-neutral-900 text-xl font-medium leading-[35px]">
                 Same Subscription with more Capabilities with ArcGIS Pro and
                 ArcOnline Licenses

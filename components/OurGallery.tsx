@@ -13,7 +13,7 @@ export const OurGallery = () => {
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-[18px] flex">
-              <div className="text-center text-zinc-950 text-[32px] font-extrabold leading-[54px]">
+              <div className="text-center text-zinc-950 text-[28px] lg:text-[32px] font-extrabold leading-[54px]">
                 Take A View of Our Gallery
               </div>
             </div>

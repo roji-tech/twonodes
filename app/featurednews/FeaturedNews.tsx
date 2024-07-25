@@ -10,7 +10,7 @@ const FeaturedNews = () => {
             </div>
           </div>
           <div className="flex-col justify-start items-start gap-[18px] flex">
-            <div className="text-center text-[#0c0e12] text-[32px] font-extrabold leading-[54px]">
+            <div className="text-center text-[#0c0e12] text-[28px] lg:text-[32px] font-extrabold leading-[54px]">
               Featured News
             </div>
           </div>
