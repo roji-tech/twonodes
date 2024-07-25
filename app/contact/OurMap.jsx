@@ -1,26 +1,18 @@
-export const ContactUs = () => {
-  return (
-    <div className="mywrapper w-full min-h-[262px] py-[60px] bg-white flex-col justify-center items-center gap-2.5 inline-flex">
-      <div className="self-stretch h-[142px] flex-col justify-center items-center gap-[45px] flex">
-        <div className="w-full justify-between items-center inline-flex">
-          <div className="w-full flex-col justify-start items-center gap-[18px] inline-flex">
-            <div className="max-w-[706px] text-center text-zinc-950 text-[50px] font-extrabold leading-[64px]">
-              Contact Us
-            </div>
-            <div className="max-w-[982px] text-center text-neutral-600 text-base font-normal leading-[30px]">
-              Discover how our innovative GIS solution revolutionizes the
-              representation of extent and survey information. Experience
-              seamless management and retrieval of Survey Plans like never
-              before!
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+"use client";
+
+import GoogleMapReact from "google-map-react";
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export const OurMap = () => {
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627,
+    },
+    zoom: 11,
+  };
+
   return (
     <section className="mywrapper w-full">
       <div className="w-full min-h-[797px] py-24 bg-white grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center lg:justify-items-stretch">
@@ -109,6 +101,17 @@ export const OurMap = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+      </div>
+
+      {/* // Important! Always set the container height explicitly */}
+      <div style={{ height: "100vh", width: "100%" }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "" }}
+          defaultCenter={defaultProps.center}
+          defaultZoom={defaultProps.zoom}
+        >
+          <AnyReactComponent lat={59.955413} lng={30.337844} text="Our Location" />
+        </GoogleMapReact>
       </div>
     </section>
   );

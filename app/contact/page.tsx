@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
 import { ReachOutToUs } from "@/components/ReachOutToUs";
 import Footer from "@/components/Footer";
-import { ContactUs, OurMap } from "./Components";
+import { OurMap } from "./OurMap";
+import { ContactUs } from "./ContactUs";
 
 export default function Home() {
   return (
