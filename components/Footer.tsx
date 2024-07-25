@@ -273,7 +273,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="text-right text-stone-950 text-base font-normal leading-normal">
+          <div className="text-center text-stone-950 text-base font-normal leading-normal">
             Copyright © 2024 TwoNode Technologies | All Rights Reserved
           </div>
         </div>

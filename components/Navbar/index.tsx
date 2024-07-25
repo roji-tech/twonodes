@@ -98,7 +98,7 @@ const Navbar = () => {
         </div>
 
         {/* MOBILE NAVBAR RESPONSIVE */}
-        <div className="w-full z-[90] h-full lg:hidden">
+        <div className="w-full  z-[90] h-full lg:hidden">
           <SidebarMobile sidebarItems={navbarItems} />
         </div>
       </div>

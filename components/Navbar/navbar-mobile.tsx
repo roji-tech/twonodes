@@ -29,7 +29,7 @@ export function SidebarMobile(props: SidebarMobileProps) {
 
   return (
     <Sheet>
-      <div className="w-full flex h-[54px] justify-between items-center gap-[80px]">
+      <div className="w-full overflow-y-auto flex h-[54px] justify-between items-center gap-[80px]">
         <Link href={"/"} className="justify-start items-center flex">
           <img alt="" className="w-[202px] h-11" src="/logo.svg" />
         </Link>
@@ -99,7 +99,7 @@ export function SidebarMobile(props: SidebarMobileProps) {
                 </Link>
                 <Link
                   href={"/signup"}
-                  className="cursor-pointer w-[143px] h-11 px-5 py-2 bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+                  className="cursor-pointer w-[120px] h-11 px-5 py-2 bg-white text-sky-950 border border-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
                 >
                   <div className="text-center text- text-base font-semibold font-['Bricolage Grotesque'] leading-7">
                     Sign Up
@@ -115,41 +115,7 @@ export function SidebarMobile(props: SidebarMobileProps) {
                 </Link>
               </div>
             </div>
-
-            {/* {props.sidebarItems.extras} */}
           </div>
-
-          {/* <div className="absolute w-full bottom-4 px-1 left-0">
-            <Separator className="absolute -top-3 left-0 w-full" />
-            <Drawer>
-              <DrawerTrigger asChild>
-                <Button variant="ghost" className="w-full justify-start">
-                  <div className="flex justify-between items-center w-full">
-                    <div className="flex gap-2">
-                      <Avatar className="h-5 w-5">
-                        <AvatarImage src="https://github.com/max-programming.png" />
-                        <AvatarFallback>Max Programming</AvatarFallback>
-                      </Avatar>
-                      <span>Max Programming</span>
-                    </div>
-                    <MoreHorizontal size={20} />
-                  </div>
-                </Button>
-              </DrawerTrigger>
-              <DrawerContent className="mb-2 p-2">
-                <div className="flex flex-col space-y-2 mt-2">
-                  <Link href="/">
-                    <SidebarButton size="sm" icon={Settings} className="w-full">
-                      Account Settings
-                    </SidebarButton>
-                  </Link>
-                  <SidebarButton size="sm" icon={LogOut} className="w-full">
-                    Log Out
-                  </SidebarButton>
-                </div>
-              </DrawerContent>
-            </Drawer>
-          </div> */}
         </div>
       </SheetContent>
     </Sheet>
