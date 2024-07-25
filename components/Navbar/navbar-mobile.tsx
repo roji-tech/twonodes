@@ -55,7 +55,7 @@ export function SidebarMobile(props: SidebarMobileProps) {
         <div className="h-full mt-5 flex flex-col w-full gap-1">
           <div className="-my-6 divide-y divide-gray-500/10">
             <div className="space-y-2 py-6">
-              <div className="flex flex-col justify-start items-center gap-[20px]">
+              <div className="flex flex-col justify-start items-center gap-[10px]">
                 {props.sidebarItems.links.map((item, ind) => {
                   return (
                     <Link
@@ -67,7 +67,7 @@ export function SidebarMobile(props: SidebarMobileProps) {
                         variant="link"
                         // variant={pathname === item.href ? "secondary" : "ghost"}
                         icon={item.icon}
-                        className={`group-hover:translate-x-1 py-9 duration-200 w-full flex items-center font-['Bricolage Grotesque'] leading-7 ${
+                        className={`group-hover:translate-x-1 py-6 duration-200 w-full flex items-center leading-5 ${
                           pathname === item.href
                             ? "font-extrabold"
                             : "font-normal"
@@ -99,7 +99,7 @@ export function SidebarMobile(props: SidebarMobileProps) {
                 </Link>
                 <Link
                   href={"/signup"}
-                  className="cursor-pointer w-[120px] h-11 px-5 py-2 bg-white text-sky-950 border border-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+                  className="cursor-pointer h-10 w-full bg-white text-sky-950 border border-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
                 >
                   <div className="text-center text- text-base font-semibold font-['Bricolage Grotesque'] leading-7">
                     Sign Up
@@ -107,7 +107,7 @@ export function SidebarMobile(props: SidebarMobileProps) {
                 </Link>
                 <Link
                   href={"/login"}
-                  className="cursor-pointer w-[143px] h-11 px-5 py-2 bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+                  className="cursor-pointer w-full h-10 bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
                 >
                   <div className="text-center text-white text-base font-semibold font-['Bricolage Grotesque'] leading-7">
                     Login
