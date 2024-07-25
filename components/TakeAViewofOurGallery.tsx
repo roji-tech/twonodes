@@ -28,11 +28,23 @@ const TakeAViewofOurGallery = () => {
         </div>
       </div>
       <div className="w-full self-stretch min-h-[1780px] gap-[30px] grid lg:grid-cols-2 grid-cols-1 justify-items-center">
-        {Images.map((imgUrl, index) => (
-          <div key={index} className="w-full p-3 flex justify-center">
-            <img className="w-full max-w-[570px] max-h-[450px]" src={imgUrl} />
-          </div>
-        ))}
+        {Images.map((imgUrl, index) =>
+          index == 1 ? (
+            <div key={index} className="w-full p-3 flex justify-center">
+              <img
+                className="w-full max-w-[570px] max-h-[370px]"
+                src={imgUrl}
+              />
+            </div>
+          ) : (
+            <div key={index} className="w-full p-3 flex justify-center">
+              <img
+                className="w-full max-w-[570px] max-h-[430px]"
+                src={imgUrl}
+              />
+            </div>
+          )
+        )}
       </div>
     </div>
   );

@@ -7,6 +7,16 @@ import { SidebarMobile } from "./navbar-mobile";
 import { navbarItems } from "./navbarItems";
 import { usePathname } from "next/navigation";
 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { User } from "lucide-react";
+
 const Navbar = () => {
   const pathname = usePathname();
 
@@ -32,14 +42,56 @@ const Navbar = () => {
                   </Link>
                 ))}
               </div>
-              <Link
-                href={"/login"}
-                className="cursor-pointer w-[143px] h-11 px-5 py-2 bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
-              >
-                <div className="text-center text-white text-base font-semibold font-['Bricolage Grotesque'] leading-7">
-                  Login
-                </div>
-              </Link>
+
+              <div className="hidden 2xl:flex items-center justify-end gap-3">
+                <Link
+                  href={"/signup"}
+                  className="cursor-pointer w-[120px] h-11 px-5 py-2 bg-white text-sky-950 border border-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+                >
+                  <div className="text-center text-sky-950 text-base font-semibold font-['Bricolage Grotesque'] leading-7">
+                    Sign Up
+                  </div>
+                </Link>
+                <Link
+                  href={"/login"}
+                  className="cursor-pointer w-[120px] h-11 px-5 py-2 bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+                >
+                  <div className="text-center text-white text-base font-semibold font-['Bricolage Grotesque'] leading-7">
+                    Login
+                  </div>
+                </Link>
+              </div>
+              <div className="2xl:hidden flex">
+                <DropdownMenu>
+                  <DropdownMenuTrigger>
+                    <User />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuLabel></DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>
+                      <Link
+                        href={"/signup"}
+                        className="cursor-pointer w-[120px] h-11 px-5 py-2 bg-white text-sky-950 border border-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+                      >
+                        <div className="text-center text-sky-950 text-base font-semibold font-['Bricolage Grotesque'] leading-7">
+                          Sign Up
+                        </div>
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link
+                        href={"/login"}
+                        className="cursor-pointer w-[120px] h-11 px-5 py-2 bg-sky-950 rounded-[30px] justify-center items-center gap-2.5 inline-flex"
+                      >
+                        <div className="text-center text-white text-base font-semibold font-['Bricolage Grotesque'] leading-7">
+                          Login
+                        </div>
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
             </div>
           </div>
         </div>
