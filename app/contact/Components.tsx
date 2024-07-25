@@ -98,10 +98,17 @@ export const OurMap = () => {
             </div>
           </div>
         </div>
-        <img
-          className="w-full max-w-[657px] max-h-[605px] rounded-[10px]"
-          src="map.png"
-        />
+        <div className="overflow-hidden w-full max-w-[657px] max-h-[650px] rounded-[10px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.4224570385099!2d3.3656489437469883!3d6.5996505043054166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b924f65a38b7d%3A0xb222be673edabfd2!2s58%20Kudirat%20Abiola%20Way%2C%20Oregun%2C%20Lagos%20101233%2C%20Lagos!5e0!3m2!1sen!2sng!4v1721888613730!5m2!1sen!2sng"
+            width="600"
+            height="500"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </section>
   );
