@@ -32,7 +32,7 @@ const TakeAViewofOurGallery = () => {
           index == 1 ? (
             <div key={index} className="w-full p-3 flex justify-center">
               <img
-                className="w-full max-w-[570px] max-h-[370px]"
+                className="w-full aspect-[6000:3368] max-w-[570px] max-h-[370px]"
                 src={imgUrl}
               />
             </div>
