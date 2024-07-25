@@ -14,7 +14,7 @@ export const SignUpforOurSurvey = ({ url = "/login" }) => {
       <div className="self-stretch min-h-[254px] flex-col justify-start items-center gap-[45px] flex">
         <div className="w-full justify-between items-center inline-flex">
           <div className="w-full flex-col justify-start items-center gap-[18px] inline-flex">
-            <div className="text-center text-sky-950 text-[50px] font-extrabold leading-[64px]">
+            <div className="text-center text-sky-950 text-[35px] md:text-[50px] font-extrabold leading-[45px] md:leading-[64px]">
               Sign Up for Our Survey Data Management
             </div>
             <div className="w-[90%] text-center text-sky-950 text-base font-normal leading-[30px]">
@@ -57,7 +57,7 @@ export const BelovedClientsSayings = () => {
 
   return (
     <div className="mywrapper belovedClientBg bg-black w-full py-16 min-h-[592px] flex-col justify-start items-center gap-[70px] inline-flex">
-      <div className="text-center text-white text-[50px] font-extrabold leading-[54px]">
+      <div className="text-center text-white text-[35px] md:text-[50px] font-extrabold leading-[54px]">
         What Our Beloved Clients Are Saying
       </div>
 

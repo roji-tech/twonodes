@@ -30,7 +30,7 @@ export const Revolutionizing = () => {
           <div className="pb-6 items-center inline-flex">
             <div className="flex-col justify-start items-start inline-flex">
               <div className="justify-center items-center inline-flex">
-                <div className="text-sky-500 text-[40px] lg:text-[50px] font-extrabold leading-[54px]">
+                <div className="text-sky-500 text-[40px] lg:text-[35px] md:text-[50px] font-extrabold leading-[54px]">
                   <Carousel
                     plugins={[plugin.current]}
                     opts={{
@@ -51,7 +51,7 @@ export const Revolutionizing = () => {
                   </Carousel>
                 </div>
               </div>
-              <div className="self-stretch text-white text-[40px] lg:text-[50px] font-extrabold leading-[54px]">
+              <div className="self-stretch text-white text-[40px] lg:text-[35px] md:text-[50px] font-extrabold leading-[54px]">
                 Industry Based
                 <br />
                 Geospatial Solutions

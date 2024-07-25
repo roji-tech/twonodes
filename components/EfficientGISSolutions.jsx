@@ -54,7 +54,7 @@ export const EfficientGISSolutions = () => {
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-[18px]">
-              <div className="w-[331px] text-sky-950 text-[40px] lg:text-[50px] font-extrabold leading-[54px]">
+              <div className="w-[331px] text-sky-950 text-[40px] lg:text-[35px] md:text-[50px] font-extrabold leading-[54px]">
                 Efficient GIS Solutions
               </div>
             </div>
