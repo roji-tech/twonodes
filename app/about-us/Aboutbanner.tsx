@@ -12,7 +12,7 @@ const Aboutbanner = () => {
                 About Us
               </div>
             </div>
-            <div className="max-w-[670px] w-full text-zinc-950 text-4xl text-center md:text-start md:text-[55px] lg:text-[70px] font-extrabold leading-[74px]">
+            <div className="max-w-[670px] w-full text-zinc-950 text-4xl text-center md:text-start md:text-[55px] lg:text-[70px] font-extrabold leading-10 md:leading-[74px]">
               A Revolutionary GIS Solution
             </div>
             <div className="max-w-[570px] text-neutral-600 text-lg font-normal leading-[30px]">
@@ -35,7 +35,10 @@ const Aboutbanner = () => {
             </div>
           </div>
         </div>
-        <img src="/about.png" className="max-w-[635px] w-full min-h-[778px] bg-black/opacity-20 rounded-tl-[10px] rounded-bl-[10px]" />
+        <img
+          src="/about.png"
+          className="max-w-[635px] w-full min-h-[778px] bg-black/opacity-20 rounded-tl-[10px] rounded-bl-[10px]"
+        />
       </div>
     </section>
   );
