@@ -56,9 +56,10 @@ export function SidebarMobile(props: SidebarMobileProps) {
           <div className="-my-6 divide-y divide-gray-500/10">
             <div className="space-y-2 py-6">
               <div className="flex flex-col justify-start items-center gap-[20px]">
-                {props.sidebarItems.links.map((item) => {
+                {props.sidebarItems.links.map((item, ind) => {
                   return (
                     <Link
+                      key={ind}
                       href={item.href}
                       className="group rounded-xl w-full p-0 items-center flex cursor-pointer hover:bg-gray-600"
                     >

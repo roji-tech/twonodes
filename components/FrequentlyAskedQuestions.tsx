@@ -17,7 +17,7 @@ export const FrequentlyAskedQuestions = () => {
       <path
         d="M2 10H18M10.0001 2V18"
         stroke="#141414"
-        stroke-width="2"
+        strokeWidth="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />

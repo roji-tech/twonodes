@@ -1,16 +1,11 @@
 "use client";
 
-import { useRef, useState } from "react";
-import Autoplay from "embla-carousel-autoplay";
+import { useState } from "react";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import Link from "next/link";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 export const EfficientGISSolutions = () => {
   const [element, setElement] = useState({
@@ -19,8 +14,6 @@ export const EfficientGISSolutions = () => {
     desc: "Renders Surveyor's data in a manner that provides easy access, management and data-driven insight.",
     img: "gis.png",
   });
-
-  const plugin = useRef(Autoplay({ delay: 2000, playOnInit: true }));
 
   const GIS = [
     {
@@ -72,91 +65,20 @@ export const EfficientGISSolutions = () => {
                 {element.number}
               </div>
               <div className="flex flex-col justify-start items-start gap-5">
-                <div className="w-[482px] text-sky-950 text-2xl font-bold leading-[34px]">
-                  Survey Data Management {element.number}
+                <div className="max-w-[482px] text-sky-950 text-2xl font-bold leading-[34px]">
+                  {element.title}
                 </div>
-                <div className="w-[482px] text-neutral-600 text-base font-normal leading-7">
-                  Renders Surveyor's data in a manner that provides easy access,
-                  management and data-driven insight.
+                <div className="max-w-[482px] text-neutral-600 text-base font-normal leading-7">
+                  {element?.desc}
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-start items-start gap-5">
-            <div className="w-[470px] px-[45px] py-[15px] bg-sky-950 rounded-[30px] flex justify-center items-center gap-2.5">
-              <div className="text-center text-white text-lg font-semibold leading-[30px]">
-                Get Started Today
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-[530px] lg:basis-1/2 max-h-[642px] bg-black/opacity-20 rounded-lg mt-6 lg:mt-0 lg:ml-6 flex items-center">
-          <Carousel plugins={[plugin.current]} className="w-full">
-            <CarouselContent className="flex gap-7">
-              {GIS.map((item, ind) => (
-                <CarouselItem key={ind} className="p-6 basis-full">
-                  <div className="w-full flex flex-col lg:flex-row lg:items-center lg:justify-center gap-[50px] 2xl:gap-[70px]">
-                    <img
-                      src={item?.img}
-                      className="w-full h-auto lg:h-full object-cover rounded-lg"
-                      alt="GIS Solutions"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            {/* <CarouselPrevious />
-              <CarouselNext /> */}
-          </Carousel>
-        </div>
-      </div>
 
-      {/* <div className="w-full flex flex-col lg:flex-row lg:items-center lg:justify-center gap-[50px] 2xl:gap-[70px]">
-        <div className="lg:basis-1/2 flex flex-col justify-start items-start gap-20">
-          <div className="h-[172px] flex flex-col justify-start items-start gap-[30px]">
-            <div className="flex justify-start items-center gap-[15px]">
-              <div className="w-5 h-[0px] border-2 border-sky-950"></div>
-              <div className="text-sky-950 text-xl font-medium leading-[34px]">
-                Our Core Solution
-              </div>
-            </div>
-            <div className="flex flex-col justify-start items-start gap-[18px]">
-              <div className="w-[331px] text-sky-950 text-[50px] font-extrabold leading-[54px]">
-                Efficient GIS Solutions
-              </div>
-            </div>
-          </div>
-          <div className="min-h-[110px] flex flex-col justify-start items-start gap-6">
-            <Carousel plugins={[plugin.current]} className="w-full">
-              <CarouselContent className="flex gap-7">
-                {GIS.map((item, ind) => (
-                  <CarouselItem key={ind} className="p-6 basis-full">
-                    <div className="w-[570px] flex justify-start items-start gap-6">
-                      <div className="w-16 h-16 relative">
-                        <div className="w-16 h-16 left-0 top-0 absolute rounded-full border-2 border-sky-950" />
-                        <div className="left-[28px] top-[15px] absolute text-center text-sky-950 text-2xl font-bold leading-[34px]">
-                          {ind + 1}
-                        </div>
-                      </div>
-                      <div className="flex flex-col justify-start items-start gap-5">
-                        <div className="w-[482px] text-sky-950 text-2xl font-bold leading-[34px]">
-                          {item?.title}
-                        </div>
-                        <div className="w-[482px] text-neutral-600 text-base font-normal leading-7">
-                          Renders Surveyor's data in a manner that provides easy
-                          access, management and data-driven insight.
-                        </div>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-          </div>
           <div className="flex flex-col justify-start items-start gap-5">
             <Link
               href={"/services"}
-              className="max-w-[470px] w-full px-[45px] py-[15px] bg-sky-950 rounded-[30px] flex justify-center items-center gap-2.5"
+              className="w-[470px] px-[45px] py-[15px] bg-sky-950 rounded-[30px] flex justify-center items-center gap-2.5"
             >
               <div className="text-center text-white text-lg font-semibold leading-[30px]">
                 Get Started Today
@@ -164,24 +86,38 @@ export const EfficientGISSolutions = () => {
             </Link>
           </div>
         </div>
-        <div className="max-w-[530px] lg:basis-1/2 max-h-[642px] bg-black/opacity-20 rounded-lg mt-6 lg:mt-0 lg:ml-6 flex items-center">
-          <Carousel plugins={[plugin.current]} className="w-full">
-            <CarouselContent className="flex gap-7">
-              {GIS.map((item, ind) => (
-                <CarouselItem key={ind} className="p-6 basis-full">
-                  <div className="w-full flex flex-col lg:flex-row lg:items-center lg:justify-center gap-[50px] 2xl:gap-[70px]">
-                    <img
-                      src={item?.img}
-                      className="w-full h-auto lg:h-full object-cover rounded-lg"
-                      alt="GIS Solutions"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
+        <div className="gap-6 lg:basis-1/2 max-h-[642px] flex justify-center items-center">
+          <Carousel
+            centerMode={true}
+            centerSlidePercentage={100}
+            showArrows={false}
+            showStatus={false}
+            showIndicators={false}
+            autoPlay={true}
+            infiniteLoop
+            interval={2000}
+            onChange={(ind, item) => setElement(GIS[ind])}
+            onSwipeMove={() => {}}
+            showThumbs={false}
+            stopOnHover={false}
+            swipeable={true}
+            className="gap-6 w-full max-w-[530px] max-h-[642px] bg-black/opacity-20 rounded-lg mt-6 lg:mt-0 flex items-center"
+          >
+            {GIS.map((item, ind) => (
+              <div
+                key={ind}
+                className="p-6 w-full flex flex-col lg:flex-row lg:items-center lg:justify-center gap-[50px] 2xl:gap-[70px]"
+              >
+                <img
+                  src={item?.img}
+                  className="w-full h-auto lg:h-full object-cover rounded-lg"
+                  alt="GIS Solutions"
+                />
+              </div>
+            ))}
           </Carousel>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

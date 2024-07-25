@@ -31,8 +31,9 @@ const Navbar = () => {
                 <img alt="" className="" src="/logo.svg" />
               </Link>
               <div className="justify-start items-center gap-[35px] flex">
-                {navbarItems.links.map((item) => (
+                {navbarItems.links.map((item, ind) => (
                   <Link
+                    key={ind}
                     href={item.href}
                     className={`text-center text-sky-950 text-base font-['Bricolage Grotesque'] leading-7 ${
                       pathname === item.href ? "font-bold" : "font-normal"
