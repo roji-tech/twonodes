@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: url(/belovedclientBg.png) lightgray 50% / cover no-repeat;
 }
 
-.debuger {
+/* .debuger {
   outline: 5px solid red;
   outline-offset: -3px;
 }
@@ -87,4 +87,4 @@ body::-webkit-scrollbar-thumb:hover {
 .debuger > * {
   outline: 8px solid yellow;
   outline-offset: -6px;
-}
+} */
