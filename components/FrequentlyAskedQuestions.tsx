@@ -49,7 +49,7 @@ export const FrequentlyAskedQuestions = () => {
             </AccordionTrigger>
             <AccordionContent>
               <p className="pl-[5%]">
-                TwoNodes Technologies is a revolutionary GIS solution company
+                TwoNode Technologies is a revolutionary GIS solution company
                 providing that local industry solution that you need
               </p>
             </AccordionContent>

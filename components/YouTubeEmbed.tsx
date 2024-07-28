@@ -9,7 +9,7 @@ const YouTubeEmbed = () => (
           width="560"
           height="315"
           src="https://www.youtube.com/embed/LapeR9T4ZhY?si=9YJZrPsq9tFnhrPa"
-          title="TwoNodes Technologies"
+          title="TwoNode Technologies"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
