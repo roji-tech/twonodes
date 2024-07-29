@@ -6,8 +6,8 @@ import Link from "next/link";
 // const inter = Inter({ subsets: ["latin"] });
 // inter.className
 export const metadata: Metadata = {
-  title: "TwoNode",
-  description: "TwoNode TECH",
+  title: "TwoNode Technologies",
+  description: "TwoNode Technologies",
 };
 
 export default function RootLayout({
@@ -28,12 +28,12 @@ export default function RootLayout({
         {/* <!-- SEO Meta Tags --> */}
         <meta
           name="description"
-          content="TwoNode is an The Platform for Industry Based GIS Solutions"
+          content="TwoNode Technologies is an The Platform for Industry Based GIS Solutions"
         />
-        <meta name="author" content="TwoNode" />
+        <meta name="author" content="TwoNode Technologies" />
 
         {/* <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ --> */}
-        <meta property="og:site_name" content="TwoNode" />
+        <meta property="og:site_name" content="TwoNode Technologies" />
         {/* <!-- website name --> */}
         <meta
           property="og:site"
@@ -42,12 +42,12 @@ export default function RootLayout({
         {/* <!-- website link --> */}
         <meta
           property="og:title"
-          content="TwoNode - The Platform for Industry Based GIS Solutions"
+          content="TwoNode Technologies - The Platform for Industry Based GIS Solutions"
         />
         {/* <!-- title shown in the actual shared post --> */}
         <meta
           property="og:description"
-          content="TwoNode - The Platform for Industry Based GIS Solutions"
+          content="TwoNode Technologies - The Platform for Industry Based GIS Solutions"
         />
         {/* <!-- description shown in the actual shared post --> */}
         <meta
@@ -61,14 +61,14 @@ export default function RootLayout({
 
         {/* <!-- Twitter Card Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@TwoNode" />
+        <meta name="twitter:site" content="@TwoNodeTechnologies" />
         <meta
           name="twitter:title"
-          content="TwoNode - The Platform for Industry Based GIS Solutions"
+          content="TwoNode Technologies - The Platform for Industry Based GIS Solutions"
         />
         <meta
           name="twitter:description"
-          content="TwoNode is an The Platform for Industry Based GIS Solutions"
+          content="TwoNode Technologies is an The Platform for Industry Based GIS Solutions"
         />
         <meta
           name="twitter:image"
@@ -76,7 +76,7 @@ export default function RootLayout({
         />
 
         {/* <!-- Website Title --> */}
-        <title>TwoNode - The Platform for Industry Based GIS Solutions</title>
+        <title>TwoNode Technologies - The Platform for Industry Based GIS Solutions</title>
 
         {/* <!-- Styles --> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
