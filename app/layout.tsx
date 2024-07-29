@@ -30,6 +30,7 @@ export default function RootLayout({
           name="description"
           content="TwoNode Technologies is an The Platform for Industry Based GIS Solutions"
         />
+        <meta name="keywords" content="twonode, twonodes, tech, technology, technologies, landing page, SEO" />
         <meta name="author" content="TwoNode Technologies" />
 
         {/* <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ --> */}
@@ -76,7 +77,9 @@ export default function RootLayout({
         />
 
         {/* <!-- Website Title --> */}
-        <title>TwoNode Technologies - The Platform for Industry Based GIS Solutions</title>
+        <title>
+          TwoNode Technologies - The Platform for Industry Based GIS Solutions
+        </title>
 
         {/* <!-- Styles --> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -104,6 +107,17 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
           rel="stylesheet"
         />
+
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "TwoNode Technologies",
+            "url": "https://www.twonodetechnologies.com"
+          }
+        `}
+        </script>
       </head>
       <body style={{}}>
         <div className="h-[70px] w-full bg-slate-900">
