@@ -1,19 +1,11 @@
 import { Metadata, Viewport } from "next";
 import { FC } from "react";
-import { RevaHeroSection } from "../RevaHeroSection";
-import { RevaFooterSection } from "../RevaFooterSection";
+import ViewDetails from "./viewDetails";
 
-import RevaDueDiligenceForm from "./RevaDueDiligenceForm";
-
-// import dynamic from "next/dynamic";
-// const RevaDueDiligenceForm = dynamic(() => import("./RevaDueDiligenceForm"), {
-//   ssr: false,
-// });
-
-// Define the viewport settings for the page
 export const viewport: Viewport = {
-  colorScheme: "light",
-  themeColor: "#ffffff",
+  colorScheme: "light",  themeColor: "#ffffff",
+
+
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
@@ -23,10 +15,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Form: Due Diligence Request - REVA",
+  title: "REVA - Real Estate Due Diligence",
   description:
-    "Request a structured land report with ease in just a few clicks.",
-  keywords: "REVA, due diligence, land report, real estate, request form",
+    "Real Estate Due Diligence Just Got Intelligent! Request detailed land reports with ease.",
+  keywords: "REVA, real estate, due diligence, land reports, property insights",
   authors: [
     {
       name: "TwoNode Technologies",
@@ -37,12 +29,11 @@ export const metadata: Metadata = {
   applicationName: "REVA - Real Estate Due Diligence",
   robots: "index, follow",
   generator: "Next.js",
-  publisher: "TwoNode Technologies",
   openGraph: {
-    title: "Form: Due Diligence Request - REVA",
+    title: "REVA - Real Estate Due Diligence",
     description:
-      "Request a structured land report with ease in just a few clicks.",
-    url: "https://twonode.com/reva/requestform",
+      "Simplify real estate due diligence with REVA. Request detailed land reports effortlessly.",
+    url: "https://twonode.com/reva",
     siteName: "TwoNode Technologies",
     images: [
       {
@@ -57,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Form: Due Diligence Request - REVA",
+    title: "REVA - Real Estate Due Diligence",
     description:
-      "Request a structured land report with ease in just a few clicks.",
+      "Simplify real estate due diligence with REVA. Request detailed land reports effortlessly.",
     images: ["https://twonode.com/images/reva.png"],
     site: "@TwoNodeTechnologies",
     creator: "@TwoNodeTechnologies",
@@ -80,21 +71,19 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://twonode.com"),
   alternates: {
-    canonical: "https://twonode.com/reva/requestform",
+    canonical: "https://twonode.com/reva",
     languages: {
-      en: "https://twonode.com/reva/requestform",
+      en: "https://twonode.com/reva",
     },
   },
 };
 
-const RevaFormPage: FC = () => {
+const ViewDetailsPage: FC = () => {
   return (
-    <div>
-      <RevaHeroSection showRequestButton={false} />
-      <RevaDueDiligenceForm />
-      <RevaFooterSection />
-    </div>
+    <>
+      <ViewDetails />
+    </>
   );
 };
 
-export default RevaFormPage;
+export default ViewDetailsPage;
