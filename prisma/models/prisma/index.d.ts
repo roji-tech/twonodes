@@ -241,8 +241,8 @@ export namespace Prisma {
   export import Exact = $Public.Exact
 
   /**
-   * Prisma Client JS version: 6.5.0
-   * Query Engine version: 173f8d54f8d52e692c7e27e72a88314ec7aeff60
+   * Prisma Client JS version: 6.6.0
+   * Query Engine version: f676762280b54cd07c770017ed3711ddde35f37a
    */
   export type PrismaVersion = {
     client: string
@@ -1900,7 +1900,7 @@ export namespace Prisma {
 
   /**
    * Fields of the Property model
-   */ 
+   */
   interface PropertyFieldRefs {
     readonly id: FieldRef<"Property", 'String'>
     readonly reference: FieldRef<"Property", 'String'>
@@ -2372,6 +2372,7 @@ export namespace Prisma {
     lat: number | null
     lng: number | null
     lga: string | null
+    parcelId: string | null
     totalCost: number | null
     comments: string | null
     createdAt: Date | null
@@ -2393,6 +2394,7 @@ export namespace Prisma {
     lat: number | null
     lng: number | null
     lga: string | null
+    parcelId: string | null
     totalCost: number | null
     comments: string | null
     createdAt: Date | null
@@ -2414,6 +2416,7 @@ export namespace Prisma {
     lat: number
     lng: number
     lga: number
+    parcelId: number
     totalCost: number
     supportingDocumentsUrls: number
     comments: number
@@ -2450,6 +2453,7 @@ export namespace Prisma {
     lat?: true
     lng?: true
     lga?: true
+    parcelId?: true
     totalCost?: true
     comments?: true
     createdAt?: true
@@ -2471,6 +2475,7 @@ export namespace Prisma {
     lat?: true
     lng?: true
     lga?: true
+    parcelId?: true
     totalCost?: true
     comments?: true
     createdAt?: true
@@ -2492,6 +2497,7 @@ export namespace Prisma {
     lat?: true
     lng?: true
     lga?: true
+    parcelId?: true
     totalCost?: true
     supportingDocumentsUrls?: true
     comments?: true
@@ -2601,6 +2607,7 @@ export namespace Prisma {
     lat: number | null
     lng: number | null
     lga: string
+    parcelId: string | null
     totalCost: number
     supportingDocumentsUrls: string[]
     comments: string | null
@@ -2642,6 +2649,7 @@ export namespace Prisma {
     lat?: boolean
     lng?: boolean
     lga?: boolean
+    parcelId?: boolean
     totalCost?: boolean
     supportingDocumentsUrls?: boolean
     comments?: boolean
@@ -2664,6 +2672,7 @@ export namespace Prisma {
     lat?: boolean
     lng?: boolean
     lga?: boolean
+    parcelId?: boolean
     totalCost?: boolean
     supportingDocumentsUrls?: boolean
     comments?: boolean
@@ -2686,6 +2695,7 @@ export namespace Prisma {
     lat?: boolean
     lng?: boolean
     lga?: boolean
+    parcelId?: boolean
     totalCost?: boolean
     supportingDocumentsUrls?: boolean
     comments?: boolean
@@ -2708,6 +2718,7 @@ export namespace Prisma {
     lat?: boolean
     lng?: boolean
     lga?: boolean
+    parcelId?: boolean
     totalCost?: boolean
     supportingDocumentsUrls?: boolean
     comments?: boolean
@@ -2715,7 +2726,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }
 
-  export type OneTimeUserPropertyOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "reference" | "requester" | "description" | "status" | "paymentStatus" | "statusMessage" | "error" | "email" | "userPhoneNumber" | "address" | "lat" | "lng" | "lga" | "totalCost" | "supportingDocumentsUrls" | "comments" | "createdAt" | "updatedAt", ExtArgs["result"]["oneTimeUserProperty"]>
+  export type OneTimeUserPropertyOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "reference" | "requester" | "description" | "status" | "paymentStatus" | "statusMessage" | "error" | "email" | "userPhoneNumber" | "address" | "lat" | "lng" | "lga" | "parcelId" | "totalCost" | "supportingDocumentsUrls" | "comments" | "createdAt" | "updatedAt", ExtArgs["result"]["oneTimeUserProperty"]>
 
   export type $OneTimeUserPropertyPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "OneTimeUserProperty"
@@ -2735,6 +2746,7 @@ export namespace Prisma {
       lat: number | null
       lng: number | null
       lga: string
+      parcelId: string | null
       totalCost: number
       supportingDocumentsUrls: string[]
       comments: string | null
@@ -3161,7 +3173,7 @@ export namespace Prisma {
 
   /**
    * Fields of the OneTimeUserProperty model
-   */ 
+   */
   interface OneTimeUserPropertyFieldRefs {
     readonly id: FieldRef<"OneTimeUserProperty", 'String'>
     readonly reference: FieldRef<"OneTimeUserProperty", 'String'>
@@ -3177,6 +3189,7 @@ export namespace Prisma {
     readonly lat: FieldRef<"OneTimeUserProperty", 'Float'>
     readonly lng: FieldRef<"OneTimeUserProperty", 'Float'>
     readonly lga: FieldRef<"OneTimeUserProperty", 'String'>
+    readonly parcelId: FieldRef<"OneTimeUserProperty", 'String'>
     readonly totalCost: FieldRef<"OneTimeUserProperty", 'Float'>
     readonly supportingDocumentsUrls: FieldRef<"OneTimeUserProperty", 'String[]'>
     readonly comments: FieldRef<"OneTimeUserProperty", 'String'>
@@ -4157,7 +4170,7 @@ export namespace Prisma {
 
   /**
    * Fields of the User model
-   */ 
+   */
   interface UserFieldRefs {
     readonly id: FieldRef<"User", 'String'>
     readonly email: FieldRef<"User", 'String'>
@@ -4644,6 +4657,7 @@ export namespace Prisma {
     lat: 'lat',
     lng: 'lng',
     lga: 'lga',
+    parcelId: 'parcelId',
     totalCost: 'totalCost',
     supportingDocumentsUrls: 'supportingDocumentsUrls',
     comments: 'comments',
@@ -4688,7 +4702,7 @@ export namespace Prisma {
 
 
   /**
-   * Field references 
+   * Field references
    */
 
 
@@ -4886,6 +4900,7 @@ export namespace Prisma {
     lat?: FloatNullableFilter<"OneTimeUserProperty"> | number | null
     lng?: FloatNullableFilter<"OneTimeUserProperty"> | number | null
     lga?: StringFilter<"OneTimeUserProperty"> | string
+    parcelId?: StringNullableFilter<"OneTimeUserProperty"> | string | null
     totalCost?: FloatFilter<"OneTimeUserProperty"> | number
     supportingDocumentsUrls?: StringNullableListFilter<"OneTimeUserProperty">
     comments?: StringNullableFilter<"OneTimeUserProperty"> | string | null
@@ -4908,6 +4923,7 @@ export namespace Prisma {
     lat?: SortOrderInput | SortOrder
     lng?: SortOrderInput | SortOrder
     lga?: SortOrder
+    parcelId?: SortOrderInput | SortOrder
     totalCost?: SortOrder
     supportingDocumentsUrls?: SortOrder
     comments?: SortOrderInput | SortOrder
@@ -4933,6 +4949,7 @@ export namespace Prisma {
     lat?: FloatNullableFilter<"OneTimeUserProperty"> | number | null
     lng?: FloatNullableFilter<"OneTimeUserProperty"> | number | null
     lga?: StringFilter<"OneTimeUserProperty"> | string
+    parcelId?: StringNullableFilter<"OneTimeUserProperty"> | string | null
     totalCost?: FloatFilter<"OneTimeUserProperty"> | number
     supportingDocumentsUrls?: StringNullableListFilter<"OneTimeUserProperty">
     comments?: StringNullableFilter<"OneTimeUserProperty"> | string | null
@@ -4955,6 +4972,7 @@ export namespace Prisma {
     lat?: SortOrderInput | SortOrder
     lng?: SortOrderInput | SortOrder
     lga?: SortOrder
+    parcelId?: SortOrderInput | SortOrder
     totalCost?: SortOrder
     supportingDocumentsUrls?: SortOrder
     comments?: SortOrderInput | SortOrder
@@ -4985,6 +5003,7 @@ export namespace Prisma {
     lat?: FloatNullableWithAggregatesFilter<"OneTimeUserProperty"> | number | null
     lng?: FloatNullableWithAggregatesFilter<"OneTimeUserProperty"> | number | null
     lga?: StringWithAggregatesFilter<"OneTimeUserProperty"> | string
+    parcelId?: StringNullableWithAggregatesFilter<"OneTimeUserProperty"> | string | null
     totalCost?: FloatWithAggregatesFilter<"OneTimeUserProperty"> | number
     supportingDocumentsUrls?: StringNullableListFilter<"OneTimeUserProperty">
     comments?: StringNullableWithAggregatesFilter<"OneTimeUserProperty"> | string | null
@@ -5191,6 +5210,7 @@ export namespace Prisma {
     lat?: number | null
     lng?: number | null
     lga: string
+    parcelId?: string | null
     totalCost: number
     supportingDocumentsUrls?: OneTimeUserPropertyCreatesupportingDocumentsUrlsInput | string[]
     comments?: string | null
@@ -5213,6 +5233,7 @@ export namespace Prisma {
     lat?: number | null
     lng?: number | null
     lga: string
+    parcelId?: string | null
     totalCost: number
     supportingDocumentsUrls?: OneTimeUserPropertyCreatesupportingDocumentsUrlsInput | string[]
     comments?: string | null
@@ -5235,6 +5256,7 @@ export namespace Prisma {
     lat?: NullableFloatFieldUpdateOperationsInput | number | null
     lng?: NullableFloatFieldUpdateOperationsInput | number | null
     lga?: StringFieldUpdateOperationsInput | string
+    parcelId?: NullableStringFieldUpdateOperationsInput | string | null
     totalCost?: FloatFieldUpdateOperationsInput | number
     supportingDocumentsUrls?: OneTimeUserPropertyUpdatesupportingDocumentsUrlsInput | string[]
     comments?: NullableStringFieldUpdateOperationsInput | string | null
@@ -5257,6 +5279,7 @@ export namespace Prisma {
     lat?: NullableFloatFieldUpdateOperationsInput | number | null
     lng?: NullableFloatFieldUpdateOperationsInput | number | null
     lga?: StringFieldUpdateOperationsInput | string
+    parcelId?: NullableStringFieldUpdateOperationsInput | string | null
     totalCost?: FloatFieldUpdateOperationsInput | number
     supportingDocumentsUrls?: OneTimeUserPropertyUpdatesupportingDocumentsUrlsInput | string[]
     comments?: NullableStringFieldUpdateOperationsInput | string | null
@@ -5279,6 +5302,7 @@ export namespace Prisma {
     lat?: number | null
     lng?: number | null
     lga: string
+    parcelId?: string | null
     totalCost: number
     supportingDocumentsUrls?: OneTimeUserPropertyCreatesupportingDocumentsUrlsInput | string[]
     comments?: string | null
@@ -5301,6 +5325,7 @@ export namespace Prisma {
     lat?: NullableFloatFieldUpdateOperationsInput | number | null
     lng?: NullableFloatFieldUpdateOperationsInput | number | null
     lga?: StringFieldUpdateOperationsInput | string
+    parcelId?: NullableStringFieldUpdateOperationsInput | string | null
     totalCost?: FloatFieldUpdateOperationsInput | number
     supportingDocumentsUrls?: OneTimeUserPropertyUpdatesupportingDocumentsUrlsInput | string[]
     comments?: NullableStringFieldUpdateOperationsInput | string | null
@@ -5323,6 +5348,7 @@ export namespace Prisma {
     lat?: NullableFloatFieldUpdateOperationsInput | number | null
     lng?: NullableFloatFieldUpdateOperationsInput | number | null
     lga?: StringFieldUpdateOperationsInput | string
+    parcelId?: NullableStringFieldUpdateOperationsInput | string | null
     totalCost?: FloatFieldUpdateOperationsInput | number
     supportingDocumentsUrls?: OneTimeUserPropertyUpdatesupportingDocumentsUrlsInput | string[]
     comments?: NullableStringFieldUpdateOperationsInput | string | null
@@ -5624,6 +5650,7 @@ export namespace Prisma {
     lat?: SortOrder
     lng?: SortOrder
     lga?: SortOrder
+    parcelId?: SortOrder
     totalCost?: SortOrder
     supportingDocumentsUrls?: SortOrder
     comments?: SortOrder
@@ -5652,6 +5679,7 @@ export namespace Prisma {
     lat?: SortOrder
     lng?: SortOrder
     lga?: SortOrder
+    parcelId?: SortOrder
     totalCost?: SortOrder
     comments?: SortOrder
     createdAt?: SortOrder
@@ -5673,6 +5701,7 @@ export namespace Prisma {
     lat?: SortOrder
     lng?: SortOrder
     lga?: SortOrder
+    parcelId?: SortOrder
     totalCost?: SortOrder
     comments?: SortOrder
     createdAt?: SortOrder
