@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { removeIdPrefix } from "@/utils/removeIDFromParcel";
 
-const ViewDetailsContent = ({ formData }: { formData: any }) => {
+const VerifyPaymentContent = ({ formData }: { formData: any }) => {
   const router = useRouter();
 
   const searchParams = useSearchParams();
@@ -43,7 +43,7 @@ const ViewDetailsContent = ({ formData }: { formData: any }) => {
           <Detail label="Property Address" value={formData?.address} />
           <Detail
             label="Location"
-            value={`${formData?.lat ?? ""}, ${formData?.lng ?? ""}`}
+            value={`${formData?.lat}, ${formData?.lng}`}
           />
           <Detail
             label="Parcel ID"
@@ -78,7 +78,7 @@ const ViewDetailsContent = ({ formData }: { formData: any }) => {
             All Request
           </Button>
 
-          {formData?.paymentStatus !== "Paid" ? (
+          {formData.paymentStatus !== "Successful" ? (
             <>
               <Button
                 variant={"outline"}
@@ -101,17 +101,17 @@ const ViewDetailsContent = ({ formData }: { formData: any }) => {
   );
 };
 
-const ViewDetails = ({ formData }: { formData: any }) => {
+const VerifyPayment = ({ formData }: { formData: any }) => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <>
-        <ViewDetailsContent formData={formData} />
+        <VerifyPaymentContent formData={formData} />
       </>
     </Suspense>
   );
 };
 
-export default ViewDetails;
+export default VerifyPayment;
 
 const Detail = ({ label = "", value = "" }) => (
   <div className="flex justify-between items-center border-b pb-2">
